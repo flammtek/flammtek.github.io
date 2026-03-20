@@ -18,17 +18,50 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://flammtek.github.io/mdf-plasma/" />
 
-<meta property="article:section" content="" />
+<meta property="og:image" content="https://flammtek.github.io/images/flammtek-preview.png" /><meta property="article:section" content="" />
   
   <meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.99c05989c42498dde11e784818e644d284e094942e9105d8246d2bbf1dfe4189.css" />
+  <link rel="stylesheet" href="/css/main.min.7e178cd50c13b63fddd20455db92b5f9041ac92c2ab60caa37a78481b43f03f0.css" />
   
   
   <script src="/js/main.803f06047bab3f1186da5b17482cbd541cf367724430153787db8e3a572a716e.js" defer></script>
 
-<link rel="stylesheet" href="/css/custom.min.801db00b6442b9dcb5795b43d8eed0219c3ec2285901f828089570d53d33ce7e.css" />
+<link rel="stylesheet" href="/css/custom.min.ce6cc576b2c933091ee0863c63dc869c5f5d2d2b63c29a7cbc734f244544d732.css" />
+
+
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+<link rel="preconnect" href="https://www.clarity.ms" crossorigin />
+<link rel="preconnect" href="https://js.hs-scripts.com" crossorigin />
+<link rel="preconnect" href="https://static.elfsight.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FlammTek",
+  "url": "https:\/\/flammtek.github.io\/",
+  "logo": "https:\/\/flammtek.github.io\/images\/flammtek_lip.svg",
+  "description": "Revolutionary cold plasma solutions for sustainable agriculture and eco-friendly waste treatment. Transforming seeds and recycling MDF residues.",
+  "email": "flammtek@gmail.com",
+  "sameAs": [
+    "https://www.linkedin.com/company/flammtek/"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Curitiba",
+    "addressRegion": "Paraná",
+    "addressCountry": "BR"
+  },
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Universidade Federal do Paraná (UFPR)"
+  }
+}
+</script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6MHQCD7CV"></script>
@@ -226,6 +259,15 @@ function setLang(l) {
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('lang') || 'pt';
   setLang(saved);
+
+  
+  function hideElfsightBadge() {
+    document.querySelectorAll('a.eapps-link, a[data-state="instant-open"]').forEach(el => {
+      el.style.setProperty('display', 'none', 'important');
+    });
+  }
+  setTimeout(hideElfsightBadge, 3000);
+  setTimeout(hideElfsightBadge, 6000);
 });
 </script>
 
@@ -534,11 +576,95 @@ document.addEventListener('DOMContentLoaded', () => {
     grid-template-columns: 1fr;
   }
 }
+
+/* Subpage LinkedIn Feed */
+.subpage-feed-container {
+  margin: 24px 0 48px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.subpage-feed-container a.eapps-link,
+.subpage-feed-container a[data-state="instant-open"] {
+  display: none !important;
+}
+
+/* Explore Other Research */
+.explore-other {
+  margin-top: 48px;
+}
+
+.explore-other h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.explore-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: var(--gray-100);
+  border: 2px solid rgba(168, 85, 247, 0.1);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.explore-card:hover {
+  border-color: var(--plasma);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(168, 85, 247, 0.15);
+}
+
+.explore-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--plasma-light);
+  color: var(--plasma-deep);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.explore-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0 0 4px;
+}
+
+.explore-card p {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.explore-arrow {
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: var(--plasma);
+  transition: transform 0.2s;
+}
+
+.explore-card:hover .explore-arrow {
+  transform: translateX(4px);
+}
 </style>
 <div class="page-header">
   <a href="/" class="back-link" data-pt="← Voltar ao início" data-en="← Back to home">← Voltar ao início</a>
   <h1 data-pt="Reciclagem de MDF por Plasma" data-en="MDF Plasma Recycling">Reciclagem de MDF por Plasma</h1>
   <p class="subtitle" data-pt="Degradação de resina ureia-formaldeído usando plasma frio para recuperação de fibras de madeira" data-en="Urea-formaldehyde resin degradation using cold plasma for wood fiber recovery">Degradação de resina ureia-formaldeído usando plasma frio para recuperação de fibras de madeira</p>
+</div>
+<div class="plasma-visual">
+  <img src="/images/plasma/MDF.jpg" alt="Amostra de MDF tratada por plasma" loading="lazy" />
 </div>
 <div class="content-section">
 <h2 data-pt="O Problema do MDF" data-en="The MDF Problem">O Problema do MDF</h2>
@@ -559,6 +685,9 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <h2 data-pt="Nossa Abordagem" data-en="Our Approach">Nossa Abordagem</h2>
 <p data-pt="Utilizamos plasma atmosférico frio para degradar seletivamente a resina ureia-formaldeído, liberando as fibras de madeira para reuso. O processo opera em temperatura ambiente, usando apenas ar — sem solventes químicos." data-en="We use cold atmospheric plasma to selectively degrade the urea-formaldehyde resin, releasing wood fibers for reuse. The process operates at room temperature, using only air — no chemical solvents.">Utilizamos plasma atmosférico frio para degradar seletivamente a resina ureia-formaldeído, liberando as fibras de madeira para reuso. O processo opera em temperatura ambiente, usando apenas ar — sem solventes químicos.</p>
+<div class="plasma-visual">
+  <img src="/images/plasma/MDF2.jpg" alt="Processo de tratamento de MDF por plasma" loading="lazy" />
+</div>
 <div class="feature-grid">
   <div class="feature-card">
     <h4 data-pt="Quebra Seletiva" data-en="Selective Breakdown">Quebra Seletiva</h4>
@@ -616,6 +745,23 @@ document.addEventListener('DOMContentLoaded', () => {
   <h3 data-pt="Interessado nesta pesquisa?" data-en="Interested in this research?">Interessado nesta pesquisa?</h3>
   <p data-pt="Entre em contato para discutir colaborações e parcerias." data-en="Get in touch to discuss collaborations and partnerships.">Entre em contato para discutir colaborações e parcerias.</p>
   <a href="/#contato" class="cta-button" data-pt="Fale Conosco →" data-en="Contact Us →">Fale Conosco →</a>
+</div>
+<h2 data-pt="Acompanhe no LinkedIn" data-en="Follow on LinkedIn">Acompanhe no LinkedIn</h2>
+<p data-pt="Veja nossas últimas publicações sobre reciclagem de MDF e economia circular." data-en="See our latest posts about MDF recycling and circular economy.">Veja nossas últimas publicações sobre reciclagem de MDF e economia circular.</p>
+<div class="subpage-feed-container">
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-b005d957-aa61-4f9a-9290-3c578e9ca7b6" data-elfsight-app-lazy></div>
+</div>
+<div class="explore-other">
+  <h3 data-pt="Explore outra pesquisa" data-en="Explore other research">Explore outra pesquisa</h3>
+  <a href="/seed-plasma/" class="explore-card">
+    <span class="explore-num">01</span>
+    <div>
+      <h4 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h4>
+      <p data-pt="Melhore a germinação sem agrotóxicos usando plasma frio." data-en="Improve germination without pesticides using cold plasma.">Melhore a germinação sem agrotóxicos usando plasma frio.</p>
+    </div>
+    <span class="explore-arrow">→</span>
+  </a>
 </div>
 </div>
 
