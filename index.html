@@ -23,14 +23,16 @@
 <meta property="og:image" content="https://flammtek.github.io/images/flammtek-preview.png" /><meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.7e178cd50c13b63fddd20455db92b5f9041ac92c2ab60caa37a78481b43f03f0.css" />
+  <link rel="stylesheet" href="/css/main.min.ba919e2ee6897b215bdb1c9c9040288a2c1c09e1c8e9166a9d7322b0fdc1f3e3.css" />
   
   
-  <script src="/js/main.803f06047bab3f1186da5b17482cbd541cf367724430153787db8e3a572a716e.js" defer></script>
+  <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
 
-<link rel="stylesheet" href="/css/custom.min.ce6cc576b2c933091ee0863c63dc869c5f5d2d2b63c29a7cbc734f244544d732.css" />
+<link rel="stylesheet" href="/css/custom.min.f31b57f0c36d3e79fb5f897be674ca522ebc4d4b0f8bc7c28450011c7ec4173c.css" />
 
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin />
 <link rel="preconnect" href="https://js.hs-scripts.com" crossorigin />
@@ -89,6 +91,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
 </head>
 
   <body>
@@ -112,10 +122,10 @@
       <img src="/images/flammtek_lhp_tb.svg" alt="FlammTek" class="logo-img" />
     </a>
     <nav class="main-nav" id="mainNav">
-      <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
       <a href="#tecnologia" data-pt="Tecnologia" data-en="Technology">Tecnologia</a>
-      <a href="#noticias" data-pt="Notícias" data-en="News">Notícias</a>
-      <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+      <a href="#processo" data-pt="Como funciona" data-en="How it works">Como funciona</a>
+      <a href="#team" data-pt="Equipe" data-en="Team">Equipe</a>
+      <a href="#contato" class="nav-cta" data-pt="Contato" data-en="Contact">Contato</a>
     </nav>
     <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -126,68 +136,187 @@
 
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-label" data-pt="Tecnologia de Plasma Frio • Curitiba, Brasil" data-en="Cold Plasma Technology • Curitiba, Brazil">Tecnologia de Plasma Frio • Curitiba, Brasil</p>
-    <h1 data-pt="Transformamos superfícies sem químicos, sem calor" data-en="We transform surfaces without chemicals, without heat">Transformamos superfícies sem químicos, sem calor</h1>
-    <p class="hero-desc" data-pt="Plasma atmosférico frio para agricultura sustentável e reciclagem de materiais. Em pré-incubação na UFPR, nossa tecnologia DBD opera em temperatura ambiente usando apenas ar — sem químicos, sem gases especiais." data-en="Cold atmospheric plasma for sustainable agriculture and material recycling. In pre-incubation at UFPR, our DBD technology operates at room temperature using only air — no chemicals, no special gases.">Plasma atmosférico frio para agricultura sustentável e reciclagem de materiais. Em pré-incubação na UFPR, nossa tecnologia DBD opera em temperatura ambiente usando apenas ar — sem químicos, sem gases especiais.</p>
-    <div class="hero-actions">
-      <a href="#tecnologia" class="btn-primary" data-pt="Ver tecnologia" data-en="See technology">Ver tecnologia</a>
-      <a href="#contato" class="btn-outline" data-pt="Entrar em contato" data-en="Get in touch">Entrar em contato</a>
+    <p class="hero-label" data-pt="Spin-off UFPR · Patente depositada · TRL-4" data-en="UFPR Spin-off · Patent filed · TRL-4">Spin-off UFPR · Patente depositada · TRL-4</p>
+    <h1 data-pt="+25% de vigor germinativo.<br>25 segundos. Zero químicos." data-en="+25% germination vigor.<br>25 seconds. Zero chemicals." data-html="true">+25% de vigor germinativo.<br>25 segundos. Zero químicos.</h1>
+    <p class="hero-desc" data-pt="Plasma frio que trata sementes e recicla MDF — usando apenas eletricidade." data-en="Cold plasma that treats seeds and recycles MDF — using only electricity.">Plasma frio que trata sementes e recicla MDF — usando apenas eletricidade.</p>
+
+    <div class="hero-for">
+      <span class="hero-for-label" data-pt="Para" data-en="For">Para</span>
+      <span class="hero-for-pill" data-pt="Agronegócio sustentável" data-en="Sustainable agriculture">Agronegócio sustentável</span>
+      <span class="hero-for-pill" data-pt="Gestão de resíduos industriais" data-en="Industrial waste management">Gestão de resíduos industriais</span>
     </div>
+
+    <div class="hero-actions">
+      <a href="#tecnologia" class="btn-primary" data-pt="Ver a tecnologia" data-en="See the technology">Ver a tecnologia</a>
+      <a href="#contato" class="btn-outline" data-pt="Fale conosco" data-en="Contact us">Fale conosco</a>
+    </div>
+    <p class="hero-trust" data-pt="Sem químicos · Ar atmosférico · Operação simples" data-en="No chemicals · Atmospheric air · Simple operation">Sem químicos · Ar atmosférico · Operação simples</p>
   </div>
-  <a href="#stats" class="scroll-arrow">
-    <span class="scroll-arrow-text" data-pt="Descubra mais" data-en="Discover more">Descubra mais</span>
-    <div class="arrow-icon"></div>
-  </a>
+  <div class="hero-visual">
+    <img src="/images/plasma/GifPlasma_opt.webp" alt="Cold Plasma DBD" class="hero-gif" />
+  </div>
 </section>
 
 
-<div class="trust-bar">
-  <p class="trust-text" data-pt="Startup em pré-incubação" data-en="Pre-incubation startup">Startup em pré-incubação</p>
-  <div class="trust-logos">
-    <span class="trust-logo">Pré-incubação UFPR</span>
-    <span class="trust-divider">•</span>
-    <span class="trust-logo" data-pt="Deep Tech" data-en="Deep Tech">Deep Tech</span>
-    <span class="trust-divider">•</span>
-    <span class="trust-logo" data-pt="Tecnologia Brasileira" data-en="Brazilian Technology">Tecnologia Brasileira</span>
-  </div>
+<div class="logos-strip">
+  <span class="partner-name">UFPR</span>
+  <span class="partner-name">IDR-Paraná</span>
+  <span class="partner-name">GNanoAgro</span>
+  <span class="partner-name">Catalisa ICT</span>
+  <span class="partner-name">Programa BASE</span>
+  <span class="partner-name">PRIME</span>
 </div>
 
 
-<div id="stats" class="stats-bar">
-  <div class="stat">
-    <span class="stat-num">~25°C</span>
-    <span class="stat-text" data-pt="Temperatura de operação" data-en="Operating temperature">Temperatura de operação</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num">0</span>
-    <span class="stat-text" data-pt="Químicos utilizados" data-en="Chemicals used">Químicos utilizados</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num">1 atm</span>
-    <span class="stat-text" data-pt="Pressão atmosférica" data-en="Atmospheric pressure">Pressão atmosférica</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num">UFPR</span>
-    <span class="stat-text" data-pt="Validação acadêmica" data-en="Academic validation">Validação acadêmica</span>
-  </div>
-</div>
-
-
-<section id="sobre" class="section about">
+<section class="section problem">
   <div class="section-inner">
-    <div class="about-content">
-      <span class="section-tag" data-pt="Sobre nós" data-en="About us">Sobre nós</span>
-      <h2 data-pt="Ciência de ponta, aplicação prática" data-en="Cutting-edge science, practical application">Ciência de ponta, aplicação prática</h2>
-      <p data-pt="A FlammTek nasceu da pesquisa avançada na Universidade Federal do Paraná (UFPR). Nossa tecnologia de Descarga de Barreira Dielétrica (DBD) gera plasma frio em pressão atmosférica — uma inovação que torna o tratamento de superfícies acessível e escalável para a indústria." data-en="FlammTek was born from advanced research at the Federal University of Paraná (UFPR). Our Dielectric Barrier Discharge (DBD) technology generates cold plasma at atmospheric pressure — an innovation that makes surface treatment accessible and scalable for industry.">A FlammTek nasceu da pesquisa avançada na Universidade Federal do Paraná (UFPR). Nossa tecnologia de Descarga de Barreira Dielétrica (DBD) gera plasma frio em pressão atmosférica — uma inovação que torna o tratamento de superfícies acessível e escalável para a indústria.</p>
-      <p data-pt="Eliminamos barreiras tradicionais: não precisamos de câmaras de vácuo caras, não usamos químicos tóxicos, e não danificamos materiais sensíveis ao calor. O resultado? Processos mais limpos, mais baratos e mais eficientes." data-en="We eliminate traditional barriers: no expensive vacuum chambers needed, no toxic chemicals used, and no damage to heat-sensitive materials. The result? Cleaner, cheaper, and more efficient processes.">Eliminamos barreiras tradicionais: não precisamos de câmaras de vácuo caras, não usamos químicos tóxicos, e não danificamos materiais sensíveis ao calor. O resultado? Processos mais limpos, mais baratos e mais eficientes.</p>
-      <ul class="about-list">
-        <li data-pt="Pressão atmosférica — equipamento simples, custo reduzido" data-en="Atmospheric pressure — simple equipment, reduced cost">Pressão atmosférica — equipamento simples, custo reduzido</li>
-        <li data-pt="Temperatura ambiente — seguro para materiais sensíveis" data-en="Room temperature — safe for sensitive materials">Temperatura ambiente — seguro para materiais sensíveis</li>
-        <li data-pt="Processo físico — sem insumos químicos, sem descarte especial" data-en="Physical process — no chemical inputs, no special disposal">Processo físico — sem insumos químicos, sem descarte especial</li>
-      </ul>
+    <span class="section-tag" data-pt="O problema" data-en="The problem">O problema</span>
+    <h2 data-pt="A agricultura depende de químicos.<br>O desperdício de MDF vai para aterros." data-en="Agriculture depends on chemicals.<br>MDF waste goes to landfills.">A agricultura depende de químicos.<br>O desperdício de MDF vai para aterros.</h2>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14.762a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/>
+            <path d="M17.5 10.5c-1.5 0-3-.5-3-2.5a2.5 2.5 0 0 1 5 0c0 1.5-1 2.5-2 2.5Z" opacity=".4"/>
+            <path d="M12 2C6.5 2 2 6.5 2 12c0 2 .5 3.5 1.5 5"/>
+            <path d="M22 12c0 5.5-4.5 10-10 10"/>
+            <path d="M12 2c5.5 0 10 4.5 10 10"/>
+            <path d="M12 22c1.5 0 3-.5 4.5-1.5 1.5-1 2.5-2.5 3.5-4"/>
+          </svg>
+        </div>
+        <h4 class="problem-title" data-pt="Sementes" data-en="Seeds">Sementes</h4>
+        <p data-pt="Tratamento químico convencional requer insumos recorrentes, aumenta custos e gera resíduos ambientais. A indústria agrícola gasta bilhões anualmente." data-en="Conventional chemical treatment requires recurring inputs, increases costs and generates environmental waste. The agricultural industry spends billions annually.">Tratamento químico convencional requer insumos recorrentes, aumenta custos e gera resíduos ambientais. A indústria agrícola gasta bilhões anualmente.</p>
+        <span class="problem-stat" data-pt="US$ 60B+ gasto em insumos químicos/ano" data-en="US$ 60B+ spent on chemical inputs/year">US$ 60B+ gasto em insumos químicos/ano</span>
+      </div>
+
+      <div class="problem-icon-separator">
+        <svg width="24" height="48" viewBox="0 0 24 48" fill="none"><path d="M12 0L12 40M6 34L12 42L18 34" stroke="var(--plasma)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 2h8l4 10H4L8 2Z"/>
+            <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/>
+            <path d="M10 21V15"/>
+            <path d="M14 21V15"/>
+          </svg>
+        </div>
+        <h4 class="problem-title" data-pt="MDF" data-en="MDF">MDF</h4>
+        <p data-pt="Resinas de formaldeído impedem a reciclagem do MDF. Sem alternativa viável, milhões de toneladas vão para aterros — liberando carcinógenos conhecidos." data-en="Formaldehyde resins prevent MDF recycling. Without a viable alternative, millions of tons go to landfills — releasing known carcinogens.">Resinas de formaldeído impedem a reciclagem do MDF. Sem alternativa viável, milhões de toneladas vão para aterros — liberando carcinógenos conhecidos.</p>
+        <span class="problem-stat" data-pt="~70M ton/ano de MDF descartado" data-en="~70M tons/year MDF discarded">~70M ton/ano de MDF descartado</span>
+      </div>
     </div>
-    <div class="about-image">
-      <img src="/images/plasma/GifPlasma.gif" alt="Plasma em ação" />
+
+    <div class="problem-solution">
+      <p class="problem-solution-text" data-pt="A solução? Uma única tecnologia: plasma frio, pressão atmosférica, apenas eletricidade. Sem químicos. Sem resíduos." data-en="The solution? A single technology: cold plasma, atmospheric pressure, just electricity. No chemicals. No waste.">A solução? Uma única tecnologia: plasma frio, pressão atmosférica, apenas eletricidade. Sem químicos. Sem resíduos.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section comparison">
+  <div class="section-inner">
+    <span class="section-tag" data-pt="Comparação" data-en="Comparison">Comparação</span>
+    <h2 data-pt="Plasma vs. métodos convencionais." data-en="Plasma vs. conventional methods.">Plasma vs. métodos convencionais.</h2>
+
+    <div class="comparison-grid">
+      <div class="comparison-col">
+        <span class="comparison-header old">
+          <span data-pt="Método atual" data-en="Current method">Método atual</span>
+        </span>
+        <div class="comparison-items">
+          <div class="comparison-item neg">
+            <span class="comp-icon" data-pt="×" data-en="×">×</span>
+            <span data-pt="Insumos químicos caros" data-en="Expensive chemical inputs">Insumos químicos caros</span>
+          </div>
+          <div class="comparison-item neg">
+            <span class="comp-icon" data-pt="×" data-en="×">×</span>
+            <span data-pt="Vácuo e gases especiais" data-en="Vacuum and specialty gases">Vácuo e gases especiais</span>
+          </div>
+          <div class="comparison-item neg">
+            <span class="comp-icon" data-pt="×" data-en="×">×</span>
+            <span data-pt="Resíduos e descarte" data-en="Waste and disposal">Resíduos e descarte</span>
+          </div>
+          <div class="comparison-item neg">
+            <span class="comp-icon" data-pt="×" data-en="×">×</span>
+            <span data-pt="Alto CAPEX e OPEX" data-en="High CAPEX and OPEX">Alto CAPEX e OPEX</span>
+          </div>
+          <div class="comparison-item neg">
+            <span class="comp-icon" data-pt="×" data-en="×">×</span>
+            <span data-pt="Dano térmico ao material" data-en="Thermal damage to material">Dano térmico ao material</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-col">
+        <span class="comparison-header new">
+          <span data-pt="Plasma Frio FlammTek" data-en="FlammTek Cold Plasma">Plasma Frio FlammTek</span>
+        </span>
+        <div class="comparison-items">
+          <div class="comparison-item pos">
+            <span class="comp-icon" data-pt="✓" data-en="✓">✓</span>
+            <span data-pt="Zero insumos químicos" data-en="Zero chemical inputs">Zero insumos químicos</span>
+          </div>
+          <div class="comparison-item pos">
+            <span class="comp-icon" data-pt="✓" data-en="✓">✓</span>
+            <span data-pt="Pressão atmosférica, ar" data-en="Atmospheric pressure, air">Pressão atmosférica, ar</span>
+          </div>
+          <div class="comparison-item pos">
+            <span class="comp-icon" data-pt="✓" data-en="✓">✓</span>
+            <span data-pt="Sem resíduos" data-en="No waste">Sem resíduos</span>
+          </div>
+          <div class="comparison-item pos">
+            <span class="comp-icon" data-pt="✓" data-en="✓">✓</span>
+            <span data-pt="Baixo CAPEX, energia residencial" data-en="Low CAPEX, household energy">Baixo CAPEX, energia residencial</span>
+          </div>
+          <div class="comparison-item pos">
+            <span class="comp-icon" data-pt="✓" data-en="✓">✓</span>
+            <span data-pt="~25°C, sem dano térmico" data-en="~25°C, no thermal damage">~25°C, sem dano térmico</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section metrics">
+  <div class="section-inner">
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-value">+25%</span>
+        <span class="metric-label" data-pt="Vigor germinativo" data-en="Germination vigor">Vigor germinativo</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">22%</span>
+        <span class="metric-label" data-pt="Germinação mais rápida" data-en="Faster germination">Germinação mais rápida</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">25s</span>
+        <span class="metric-label" data-pt="Tempo de tratamento" data-en="Treatment time">Tempo de tratamento</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">~25°C</span>
+        <span class="metric-label" data-pt="Temperatura de operação" data-en="Operating temperature">Temperatura de operação</span>
+      </div>
+    </div>
+
+    
+    <div class="trust-indicators">
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
+        <span data-pt="Patente depositada no Brasil" data-en="Patent filed in Brazil">Patente depositada no Brasil</span>
+      </span>
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
+        <span data-pt="TRL 4-5 validado" data-en="TRL 4-5 validated">TRL 4-5 validado</span>
+      </span>
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
+        <span data-pt="Spin-off UFPR" data-en="UFPR Spin-off">Spin-off UFPR</span>
+      </span>
     </div>
   </div>
 </section>
@@ -196,76 +325,176 @@
 <section id="tecnologia" class="section tech">
   <div class="section-inner">
     <span class="section-tag" data-pt="Aplicações" data-en="Applications">Aplicações</span>
-    <h2 data-pt="Uma tecnologia, dois mercados bilionários" data-en="One technology, two billion-dollar markets">Uma tecnologia, dois mercados bilionários</h2>
-    <p class="section-desc" data-pt="A mesma plataforma de plasma DBD resolve problemas críticos na agricultura e na indústria moveleira." data-en="The same DBD plasma platform solves critical problems in agriculture and the furniture industry.">A mesma plataforma de plasma DBD resolve problemas críticos na agricultura e na indústria moveleira.</p>
-    
+    <h2 data-pt="Uma tecnologia, dois mercados." data-en="One technology, two markets.">Uma tecnologia, dois mercados.</h2>
+    <p class="section-desc" data-pt="A mesma base tecnológica aplicada a problemas diferentes. Plasma frio DBD em pressão atmosférica." data-en="The same technology applied to different problems. Cold DBD plasma at atmospheric pressure.">A mesma base tecnológica aplicada a problemas diferentes. Plasma frio DBD em pressão atmosférica.</p>
+
     <div class="tech-grid">
-      
       <a href="/seed-plasma/" class="tech-card">
-        <span class="card-num">01</span>
-        <h3 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h3>
-        <p data-pt="Aumente a taxa de germinação sem agrotóxicos. O plasma modifica a superfície das sementes, melhorando a absorção de água e nutrientes. Uma alternativa sustentável ao tratamento químico tradicional." data-en="Increase germination rate without pesticides. Plasma modifies the seed surface, improving water and nutrient absorption. A sustainable alternative to traditional chemical treatment.">Aumente a taxa de germinação sem agrotóxicos. O plasma modifica a superfície das sementes, melhorando a absorção de água e nutrientes. Uma alternativa sustentável ao tratamento químico tradicional.</p>
+        <div class="card-img">
+          <img src="/images/plasma/plasma-reactor-1.webp" alt="Seed Treatment Plasma Reactor" loading="lazy" />
+          <span class="card-num">01</span>
+        </div>
+        <div class="card-body">
+          <h3 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h3>
+        <p data-pt="Tratamento em 25 segundos em linha contínua. Sem químicos, sem resíduos. Compatível com certificação orgânica." data-en="Treatment in 25 seconds in continuous line. No chemicals, no waste. Compatible with organic certification.">Tratamento em 25 segundos em linha contínua. Sem químicos, sem resíduos. Compatível com certificação orgânica.</p>
         <ul>
-          <li data-pt="Melhora na germinação comprovada em lab" data-en="Lab-proven germination improvement">Melhora na germinação comprovada em lab</li>
-          <li data-pt="Tratamento em segundos, não horas" data-en="Treatment in seconds, not hours">Tratamento em segundos, não horas</li>
-          <li data-pt="Compatível com sementes orgânicas" data-en="Compatible with organic seeds">Compatível com sementes orgânicas</li>
+          <li data-pt="IVG 146 → 183 (brócolis BRO68)" data-en="IVG 146 → 183 (broccoli BRO68)">IVG 146 → 183 (brócolis BRO68)</li>
+          <li data-pt="Sem compra recorrente de insumos" data-en="No recurring input purchases">Sem compra recorrente de insumos</li>
+          <li data-pt="Integrável a linhas existentes" data-en="Integrable into existing lines">Integrável a linhas existentes</li>
         </ul>
-        <span class="card-link" data-pt="Ver pesquisa →" data-en="See research →">Ver pesquisa →</span>
+        <span class="card-link" data-pt="Ver dados" data-en="See data">Ver dados</span>
+        </div>
       </a>
 
-      
       <a href="/mdf-plasma/" class="tech-card">
-        <span class="card-num">02</span>
-        <h3 data-pt="Reciclagem de MDF" data-en="MDF Recycling">Reciclagem de MDF</h3>
-        <p data-pt="Transforme resíduo tóxico em matéria-prima. O formaldeído no MDF impede sua reciclagem — nosso plasma degrada essas resinas, abrindo caminho para a economia circular na indústria moveleira." data-en="Turn toxic waste into raw material. Formaldehyde in MDF prevents recycling — our plasma degrades these resins, paving the way for circular economy in the furniture industry.">Transforme resíduo tóxico em matéria-prima. O formaldeído no MDF impede sua reciclagem — nosso plasma degrada essas resinas, abrindo caminho para a economia circular na indústria moveleira.</p>
+        <div class="card-img">
+          <img src="/images/plasma/MDF.webp" alt="MDF Plasma Recycling" loading="lazy" />
+          <span class="card-num">02</span>
+        </div>
+        <div class="card-body">
+          <h3 data-pt="Reciclagem de MDF" data-en="MDF Recycling">Reciclagem de MDF</h3>
+        <p data-pt="Degrada resinas de formaldeído na superfície, viabilizando a reciclagem. Processo a ~25°C, pressão atmosférica." data-en="Degrades formaldehyde resins on the surface, enabling recycling. Process at ~25°C, atmospheric pressure.">Degrada resinas de formaldeído na superfície, viabilizando a reciclagem. Processo a ~25°C, pressão atmosférica.</p>
         <ul>
-          <li data-pt="Degrada formaldeído (carcinógeno Grupo 1)" data-en="Degrades formaldehyde (Group 1 carcinogen)">Degrada formaldeído (carcinógeno Grupo 1)</li>
-          <li data-pt="Viabiliza reciclagem antes impossível" data-en="Enables previously impossible recycling">Viabiliza reciclagem antes impossível</li>
-          <li data-pt="Reduz passivo ambiental de indústrias" data-en="Reduces industrial environmental liability">Reduz passivo ambiental de indústrias</li>
+          <li data-pt="Formaldeído: carcinógeno Grupo 1 (IARC)" data-en="Formaldehyde: Group 1 carcinogen (IARC)">Formaldeído: carcinógeno Grupo 1 (IARC)</li>
+          <li data-pt="Elimina barreira química para reciclagem" data-en="Removes chemical barrier to recycling">Elimina barreira química para reciclagem</li>
+          <li data-pt="Reduz custo de descarte e passivo ambiental" data-en="Reduces disposal cost and environmental liability">Reduz custo de descarte e passivo ambiental</li>
         </ul>
-        <span class="card-link" data-pt="Ver pesquisa →" data-en="See research →">Ver pesquisa →</span>
-      </a>
+        <span class="card-link" data-pt="Ver dados" data-en="See data">Ver dados</span>        </div>      </a>
     </div>
   </div>
 </section>
 
 
-<section class="section how-it-works">
+<section id="processo" class="section process">
   <div class="section-inner">
     <span class="section-tag" data-pt="Como funciona" data-en="How it works">Como funciona</span>
-    <h2 data-pt="O processo DBD em 4 etapas" data-en="The DBD process in 4 steps">O processo DBD em 4 etapas</h2>
-    
-    <div class="steps">
-      <div class="step">
+    <h2 data-pt="Simples. Rápido. Sem resíduos." data-en="Simple. Fast. Zero waste.">Simples. Rápido. Sem resíduos.</h2>
+
+    <div class="process-steps">
+      <div class="process-step">
         <span class="step-num">1</span>
-        <h4 data-pt="Ionização" data-en="Ionization">Ionização</h4>
-        <p data-pt="Alta tensão entre eletrodos separados por dielétrico gera plasma." data-en="High voltage between electrodes separated by dielectric generates plasma.">Alta tensão entre eletrodos separados por dielétrico gera plasma.</p>
+        <h4 data-pt="Alimenta o reator" data-en="Feed the reactor">Alimenta o reator</h4>
+        <p data-pt="Sementes ou resíduos de MDF entram no reator DBD em esteira contínua." data-en="Seeds or MDF waste enter the DBD reactor on a continuous conveyor.">Sementes ou resíduos de MDF entram no reator DBD em esteira contínua.</p>
       </div>
-      <div class="step">
+      <div class="process-step">
         <span class="step-num">2</span>
-        <h4 data-pt="Espécies reativas" data-en="Reactive species">Espécies reativas</h4>
-        <p data-pt="ROS, RNS, UV e elétrons energéticos são gerados." data-en="ROS, RNS, UV and energetic electrons are generated.">ROS, RNS, UV e elétrons energéticos são gerados.</p>
+        <h4 data-pt="Gera o plasma" data-en="Generate the plasma">Gera o plasma</h4>
+        <p data-pt="Eletricidade ioniza o ar — espécies reativas criam um plasma frio a ~25°C." data-en="Electricity ionizes the air — reactive species create cold plasma at ~25°C.">Eletricidade ioniza o ar — espécies reativas criam um plasma frio a ~25°C.</p>
       </div>
-      <div class="step">
+      <div class="process-step">
         <span class="step-num">3</span>
-        <h4 data-pt="Interação" data-en="Interaction">Interação</h4>
-        <p data-pt="Espécies reativas interagem com a superfície do material." data-en="Reactive species interact with the material surface.">Espécies reativas interagem com a superfície do material.</p>
+        <h4 data-pt="Trata o material" data-en="Treat the material">Trata o material</h4>
+        <p data-pt="Em segundos, as propriedades de superfície são modificadas — sem químicos, sem resíduos." data-en="In seconds, surface properties are modified — no chemicals, no waste.">Em segundos, as propriedades de superfície são modificadas — sem químicos, sem resíduos.</p>
       </div>
-      <div class="step">
+      <div class="process-step">
         <span class="step-num">4</span>
-        <h4 data-pt="Modificação" data-en="Modification">Modificação</h4>
-        <p data-pt="A química da superfície é alterada — tudo sem calor." data-en="Surface chemistry is altered — all without heat.">A química da superfície é alterada — tudo sem calor.</p>
+        <h4 data-pt="Pronto para uso" data-en="Ready for use">Pronto para uso</h4>
+        <p data-pt="Sementes mais vigorosas ou fibras recicladas — prontas para o próximo passo." data-en="More vigorous seeds or recycled fibers — ready for the next step.">Sementes mais vigorosas ou fibras recicladas — prontas para o próximo passo.</p>
       </div>
     </div>
   </div>
 </section>
+
+
+<section class="section cta-break">
+  <div class="section-inner">
+    <div class="cta-break-inner">
+      <h2 data-pt="Pronto para explorar essa tecnologia?" data-en="Ready to explore this technology?">Pronto para explorar essa tecnologia?</h2>
+      <p data-pt="Se você lida com sementes ou resíduos de MDF, a conversa começa por aqui." data-en="If you work with seeds or MDF waste, the conversation starts here.">Se você lida com sementes ou resíduos de MDF, a conversa começa por aqui.</p>
+      <div class="cta-break-actions">
+        <a href="#contato" class="btn-primary cta-btn" data-pt="Fale conosco →" data-en="Talk to us →">Fale conosco →</a>
+        <a href="mailto:flammtek@gmail.com?subject=Interesse%20FlammTek" class="btn-outline cta-btn" data-pt="flammtek@gmail.com" data-en="flammtek@gmail.com">flammtek@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="sobre" class="section about">
+  <div class="section-inner">
+    <div class="about-content">
+      <span class="section-tag" data-pt="A tecnologia" data-en="The technology">A tecnologia</span>
+      <h2 data-pt="Plasma frio em pressão atmosférica." data-en="Cold plasma at atmospheric pressure.">Plasma frio em pressão atmosférica.</h2>
+      <p data-pt="Descarga de Barreira Dielétrica (DBD) gera espécies reativas que modificam superfícies — tudo a ~25°C, sem vácuo, sem químicos. Só eletricidade." data-en="Dielectric Barrier Discharge (DBD) generates reactive species that modify surfaces — all at ~25°C, no vacuum, no chemicals. Just electricity.">Descarga de Barreira Dielétrica (DBD) gera espécies reativas que modificam superfícies — tudo a ~25°C, sem vácuo, sem químicos. Só eletricidade.</p>
+      <div class="about-features">
+        <div class="about-feat">
+          <span class="feat-icon"></span>
+          <div>
+            <strong data-pt="Pressão atmosférica" data-en="Atmospheric pressure">Pressão atmosférica</strong>
+            <span data-pt="Equipamento simples, custo reduzido" data-en="Simple equipment, lower cost">Equipamento simples, custo reduzido</span>
+          </div>
+        </div>
+        <div class="about-feat">
+          <span class="feat-icon"></span>
+          <div>
+            <strong data-pt="Temperatura ambiente" data-en="Room temperature">Temperatura ambiente</strong>
+            <span data-pt="Seguro para materiais sensíveis" data-en="Safe for sensitive materials">Seguro para materiais sensíveis</span>
+          </div>
+        </div>
+        <div class="about-feat">
+          <span class="feat-icon"></span>
+          <div>
+            <strong data-pt="100% físico" data-en="100% physical">100% físico</strong>
+            <span data-pt="Sem insumos químicos, sem descarte" data-en="No chemical inputs, no disposal">Sem insumos químicos, sem descarte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="/images/plasma/lab-work-1.webp" alt="Laboratório FlammTek" />
+    </div>
+  </div>
+</section>
+
+
+<section class="section why-now">
+  <div class="section-inner">
+    <span class="section-tag" data-pt="Trajetória" data-en="Our trajectory">Trajetória</span>
+    <h2 data-pt="Do laboratório ao mercado." data-en="From lab to market.">Do laboratório ao mercado.</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <span class="timeline-date" data-pt="2022-2023" data-en="2022-2023">2022-2023</span>
+          <h4 data-pt="Pesquisa e validação" data-en="Research & validation">Pesquisa e validação</h4>
+          <p data-pt="Primeira geração do reator DBD. Validação da metodologia em laboratório UFPR." data-en="First generation DBD reactor. Methodology validation at UFPR lab.">Primeira geração do reator DBD. Validação da metodologia em laboratório UFPR.</p>
+        </div>
+      </div>
+      <div class="timeline-item active">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <span class="timeline-date" data-pt="2024-2025" data-en="2024-2025">2024-2025</span>
+          <h4 data-pt="TRL 4-5 alcançado" data-en="TRL 4-5 achieved">TRL 4-5 alcançado</h4>
+          <p data-pt="Patente depositada. Spin-off formada na UFPR. Resultados validados com brócolis BRO68." data-en="Patent filed. Spin-off formed at UFPR. Results validated with broccoli BRO68.">Patente depositada. Spin-off formada na UFPR. Resultados validados com brócolis BRO68.</p>
+          <span class="timeline-badge" data-pt="Agora" data-en="Now">Agora</span>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <div class="timeline-content">
+          <span class="timeline-date" data-pt="2025-2026" data-en="2025-2026">2025-2026</span>
+          <h4 data-pt="Piloto e escala" data-en="Pilot & scale">Piloto e escala</h4>
+          <p data-pt="Protótipos pilotos com IDR-Paraná. Preparação para parcerias industriais." data-en="Pilot prototypes with IDR-Paraná. Preparing for industrial partnerships.">Protótipos pilotos com IDR-Paraná. Preparação para parcerias industriais.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="photo-break">
+  <img src="/images/plasma/team-1.webp" alt="FlammTek team in the laboratory" loading="lazy" />
+  <div class="photo-break-overlay">
+    <p class="photo-break-quote" data-pt="Ciência de ponta. Feita no Paraná." data-en="Cutting-edge science. Made in Paraná.">Ciência de ponta. Feita no Paraná.</p>
+  </div>
+</div>
 
 
 <section class="section team" id="team">
   <div class="section-inner">
     <span class="section-tag" data-pt="Equipe" data-en="Team">Equipe</span>
-    <h2 data-pt="Quem está por trás" data-en="The people behind it">Quem está por trás</h2>
-    <p class="section-desc" data-pt="Uma equipe multidisciplinar unindo química, física, engenharia florestal e de materiais." data-en="A multidisciplinary team combining chemistry, physics, forestry and materials engineering.">Uma equipe multidisciplinar unindo química, física, engenharia florestal e de materiais.</p>
+    <h2 data-pt="Quem está por trás." data-en="The people behind it.">Quem está por trás.</h2>
     
     <div class="team-grid">
       <div class="team-card">
@@ -274,7 +503,7 @@
         </div>
         <h4>Christopher Porath Gretter</h4>
         <p class="team-role" data-pt="Sócio-fundador" data-en="Co-founder">Sócio-fundador</p>
-        <p class="team-bio" data-pt="Bacharel em Química (UFSC), Mestrando em Eng. Materiais (UFPR)" data-en="BSc Chemistry (UFSC), MSc Materials Engineering (UFPR)">Bacharel em Química (UFSC), Mestrando em Eng. Materiais (UFPR)</p>
+        <p class="team-bio" data-pt="Química (UFSC) · Mestrando Eng. Materiais (UFPR)" data-en="Chemistry (UFSC) · MSc Materials Eng. (UFPR)">Química (UFSC) · Mestrando Eng. Materiais (UFPR)</p>
       </div>
       
       <div class="team-card">
@@ -283,7 +512,7 @@
         </div>
         <h4>Andrei Evandro Karas</h4>
         <p class="team-role" data-pt="Sócio" data-en="Partner">Sócio</p>
-        <p class="team-bio" data-pt="Graduando em Eng. Florestal (UFPR)" data-en="BSc Forestry Engineering (UFPR)">Graduando em Eng. Florestal (UFPR)</p>
+        <p class="team-bio" data-pt="Eng. Mecatrônica (UTFPR)" data-en="Mechatronics Eng. (UTFPR)">Eng. Mecatrônica (UTFPR)</p>
       </div>
       
       <div class="team-card">
@@ -292,7 +521,7 @@
         </div>
         <h4>Gabriel Goetten de Lima</h4>
         <p class="team-role" data-pt="Sócio" data-en="Partner">Sócio</p>
-        <p class="team-bio" data-pt="Bacharel em Física, MSc Eng. Mec. (UFPR), Ph.D. Polymers Engineering (TUS - Ireland)" data-en="BSc Physics, MSc Mech. Eng. (UFPR), Ph.D. Polymers Engineering (TUS - Ireland)">Bacharel em Física, MSc Eng. Mec. (UFPR), Ph.D. Polymers Engineering (TUS - Ireland)</p>
+        <p class="team-bio" data-pt="Física · MSc Eng. Mec. (UFPR) · Ph.D. (TUS, Irlanda)" data-en="Physics · MSc Mech. Eng. (UFPR) · Ph.D. (TUS, Ireland)">Física · MSc Eng. Mec. (UFPR) · Ph.D. (TUS, Irlanda)</p>
       </div>
       
       <div class="team-card">
@@ -301,7 +530,7 @@
         </div>
         <h4>Izabelli C. Barcelar Zakaluk</h4>
         <p class="team-role" data-pt="Sócia" data-en="Partner">Sócia</p>
-        <p class="team-bio" data-pt="Bacharel em Eng. Industrial Madeireira (UFPR), Doutoranda em Eng. Materiais (UFPR)" data-en="BSc Industrial Wood Engineering (UFPR), PhD candidate Materials Engineering (UFPR)">Bacharel em Eng. Industrial Madeireira (UFPR), Doutoranda em Eng. Materiais (UFPR)</p>
+        <p class="team-bio" data-pt="Eng. Madeireira · M.ª Eng. Florestal · Doutoranda Eng. Materiais (UFPR)" data-en="Wood Eng. · MSc Forestry Eng. · PhD candidate Materials Eng. (UFPR)">Eng. Madeireira · M.ª Eng. Florestal · Doutoranda Eng. Materiais (UFPR)</p>
       </div>
     </div>
   </div>
@@ -311,15 +540,18 @@
 <section class="section gallery">
   <div class="section-inner">
     <span class="section-tag" data-pt="Laboratório" data-en="Laboratory">Laboratório</span>
-    <h2 data-pt="Onde a pesquisa acontece" data-en="Where the research happens">Onde a pesquisa acontece</h2>
+    <h2 data-pt="Onde a pesquisa acontece." data-en="Where the research happens.">Onde a pesquisa acontece.</h2>
     
     <div class="gallery-grid">
-      <img src="/images/plasma/plasma-reactor-1.jpg" alt="Reator de Plasma DBD" loading="lazy" />
-      <img src="/images/plasma/plasma-reactor-2.jpg" alt="Reator de Plasma" loading="lazy" />
-      <img src="/images/plasma/lab-work-2.jpg" alt="Trabalho no Laboratório" loading="lazy" />
-      <img src="/images/plasma/equipment-1.jpg" alt="Equipamento" loading="lazy" />
-      <img src="/images/plasma/mdf-sample-2.jpg" alt="Amostra de MDF tratada" loading="lazy" />
-      <img src="/images/plasma/plasma-reactor-4.jpg" alt="Sistema de Plasma" loading="lazy" />
+      <img src="/images/plasma/plasma-reactor-1.webp" alt="Reator de Plasma DBD" loading="lazy" />
+      <img src="/images/plasma/lab-work-2.webp" alt="Trabalho no Laboratório" loading="lazy" />
+      <img src="/images/plasma/plasma-reactor-2.webp" alt="Reator de Plasma" loading="lazy" />
+      <img src="/images/plasma/mdf-sample-1.webp" alt="Amostra de MDF" loading="lazy" />
+      <img src="/images/plasma/equipment-1.webp" alt="Equipamento" loading="lazy" />
+      <img src="/images/plasma/process-1.webp" alt="Processo" loading="lazy" />
+      <img src="/images/plasma/mdf-sample-2.webp" alt="Amostra de MDF tratada" loading="lazy" />
+      <img src="/images/plasma/plasma-reactor-4.webp" alt="Sistema de Plasma" loading="lazy" />
+      <img src="/images/plasma/process-2.webp" alt="Processo de tratamento" loading="lazy" />
     </div>
   </div>
 </section>
@@ -328,7 +560,7 @@
 <section class="section video">
   <div class="section-inner">
     <span class="section-tag" data-pt="Apresentação" data-en="Presentation">Apresentação</span>
-    <h2 data-pt="Conheça o projeto" data-en="Meet the project">Conheça o projeto</h2>
+    <h2 data-pt="Conheça o projeto." data-en="Meet the project.">Conheça o projeto.</h2>
     
     <div class="video-container youtube-container">
       <iframe 
@@ -348,8 +580,7 @@
 <section class="section news-preview" id="noticias">
   <div class="section-inner">
     <span class="section-tag" data-pt="Notícias" data-en="News">Notícias</span>
-    <h2 data-pt="Últimas do LinkedIn" data-en="Latest from LinkedIn">Últimas do LinkedIn</h2>
-    <p class="section-desc" data-pt="Acompanhe nosso progresso em pesquisa e desenvolvimento de plasma frio." data-en="Follow our progress in cold plasma research and development.">Acompanhe nosso progresso em pesquisa e desenvolvimento de plasma frio.</p>
+    <h2 data-pt="Últimas do LinkedIn." data-en="Latest from LinkedIn.">Últimas do LinkedIn.</h2>
     
     <div class="elfsight-feed-container">
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
@@ -368,28 +599,28 @@
 
 <section class="section faq">
   <div class="section-inner">
-    <span class="section-tag" data-pt="Perguntas Frequentes" data-en="FAQ">Perguntas Frequentes</span>
-    <h2 data-pt="Tire suas dúvidas" data-en="Get your questions answered">Tire suas dúvidas</h2>
+    <span class="section-tag">FAQ</span>
+    <h2 data-pt="Perguntas frequentes." data-en="Frequently asked questions.">Perguntas frequentes.</h2>
     
     <div class="faq-grid">
       <details class="faq-item">
-        <summary data-pt="Qual a diferença para tratamentos químicos?" data-en="What's the difference from chemical treatments?">Qual a diferença para tratamentos químicos?</summary>
-        <p data-pt="O plasma é um processo 100% físico — não deixa resíduos químicos, não contamina o solo, não requer armazenamento de produtos perigosos, e não expõe trabalhadores a substâncias tóxicas. É compatível com agricultura orgânica." data-en="Plasma is a 100% physical process — it leaves no chemical residues, doesn't contaminate soil, requires no storage of hazardous products, and doesn't expose workers to toxic substances. It's compatible with organic farming.">O plasma é um processo 100% físico — não deixa resíduos químicos, não contamina o solo, não requer armazenamento de produtos perigosos, e não expõe trabalhadores a substâncias tóxicas. É compatível com agricultura orgânica.</p>
-      </details>
-      
-      <details class="faq-item">
         <summary data-pt="É viável economicamente em escala?" data-en="Is it economically viable at scale?">É viável economicamente em escala?</summary>
-        <p data-pt="O sistema opera com ar atmosférico (custo zero de insumos), consome energia equivalente a um eletrodoméstico, e não requer infraestrutura especial. O tratamento é feito em segundos, permitindo alto throughput com baixo CAPEX." data-en="The system operates with atmospheric air (zero input cost), consumes energy equivalent to a household appliance, and requires no special infrastructure. Treatment is done in seconds, allowing high throughput with low CAPEX.">O sistema opera com ar atmosférico (custo zero de insumos), consome energia equivalente a um eletrodoméstico, e não requer infraestrutura especial. O tratamento é feito em segundos, permitindo alto throughput com baixo CAPEX.</p>
+        <p data-pt="Opera com ar atmosférico (custo zero de insumos), consome energia de um eletrodoméstico, tratamento em segundos. Alto throughput, baixo CAPEX." data-en="Runs on atmospheric air (zero input cost), consumes household-appliance energy, treats in seconds. High throughput, low CAPEX.">Opera com ar atmosférico (custo zero de insumos), consome energia de um eletrodoméstico, tratamento em segundos. Alto throughput, baixo CAPEX.</p>
       </details>
       
       <details class="faq-item">
-        <summary data-pt="Por que plasma 'frio' se é ionizado?" data-en="Why 'cold' plasma if it's ionized?">Por que plasma 'frio' se é ionizado?</summary>
-        <p data-pt="Em plasmas frios (não-térmicos), apenas os elétrons são acelerados — o gás como um todo permanece próximo à temperatura ambiente (~25°C). Isso permite tratar sementes, alimentos e materiais sensíveis sem dano térmico." data-en="In cold (non-thermal) plasmas, only electrons are accelerated — the gas as a whole remains near room temperature (~25°C). This allows treating seeds, food, and sensitive materials without thermal damage.">Em plasmas frios (não-térmicos), apenas os elétrons são acelerados — o gás como um todo permanece próximo à temperatura ambiente (~25°C). Isso permite tratar sementes, alimentos e materiais sensíveis sem dano térmico.</p>
+        <summary data-pt="Por que plasma 'frio'?" data-en="Why 'cold' plasma?">Por que plasma 'frio'?</summary>
+        <p data-pt="Apenas os elétrons são acelerados — o gás permanece a ~25°C. Trata sementes e materiais sensíveis sem dano térmico." data-en="Only electrons are accelerated — the gas stays at ~25°C. Treats seeds and sensitive materials without thermal damage.">Apenas os elétrons são acelerados — o gás permanece a ~25°C. Trata sementes e materiais sensíveis sem dano térmico.</p>
       </details>
       
       <details class="faq-item">
-        <summary data-pt="Em que estágio está o desenvolvimento?" data-en="What development stage is this at?">Em que estágio está o desenvolvimento?</summary>
-        <p data-pt="Estamos em TRL 4-5 (validação em laboratório concluída, preparando protótipos para piloto). A parceria com a UFPR garante rigor científico. Buscamos parceiros industriais para testes em ambiente real." data-en="We're at TRL 4-5 (lab validation complete, preparing prototypes for pilot). The UFPR partnership ensures scientific rigor. We're seeking industrial partners for real-world testing.">Estamos em TRL 4-5 (validação em laboratório concluída, preparando protótipos para piloto). A parceria com a UFPR garante rigor científico. Buscamos parceiros industriais para testes em ambiente real.</p>
+        <summary data-pt="Em que estágio está?" data-en="What stage is this at?">Em que estágio está?</summary>
+        <p data-pt="TRL 4-5. Validação laboratorial concluída, preparando protótipos para piloto com IDR-Paraná." data-en="TRL 4-5. Lab validation complete, preparing prototypes for pilot with IDR-Paraná.">TRL 4-5. Validação laboratorial concluída, preparando protótipos para piloto com IDR-Paraná.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary data-pt="O equipamento é complexo?" data-en="Is the equipment complex?">O equipamento é complexo?</summary>
+        <p data-pt="Compacto, pressão atmosférica, sem gases especiais nem câmaras de vácuo. Um operador treinado gerencia com facilidade." data-en="Compact, atmospheric pressure, no special gases or vacuum chambers. A trained operator manages it easily.">Compacto, pressão atmosférica, sem gases especiais nem câmaras de vácuo. Um operador treinado gerencia com facilidade.</p>
       </details>
     </div>
   </div>
@@ -399,9 +630,9 @@
 <section id="contato" class="section contact">
   <div class="section-inner contact-inner">
     <div class="contact-text">
-      <span class="section-tag" data-pt="Vamos conversar" data-en="Let's talk">Vamos conversar</span>
-      <h2 data-pt="Pronto para inovar?" data-en="Ready to innovate?">Pronto para inovar?</h2>
-      <p data-pt="Buscamos parceiros industriais para pilotos, investidores que entendem deep tech, e colaboradores de pesquisa. Se você quer fazer parte da próxima revolução em tratamento de superfícies, vamos conversar." data-en="We're looking for industrial partners for pilots, investors who understand deep tech, and research collaborators. If you want to be part of the next revolution in surface treatment, let's talk.">Buscamos parceiros industriais para pilotos, investidores que entendem deep tech, e colaboradores de pesquisa. Se você quer fazer parte da próxima revolução em tratamento de superfícies, vamos conversar.</p>
+      <span class="section-tag" data-pt="Contato" data-en="Contact">Contato</span>
+      <h2 data-pt="Vamos conversar." data-en="Let's talk.">Vamos conversar.</h2>
+      <p data-pt="Parceiros industriais, investidores, ou colaboradores de pesquisa — entre em contato." data-en="Industrial partners, investors, or research collaborators — get in touch.">Parceiros industriais, investidores, ou colaboradores de pesquisa — entre em contato.</p>
       <a href="mailto:flammtek@gmail.com" class="contact-email">flammtek@gmail.com</a>
     </div>
   </div>
@@ -460,7 +691,7 @@ function setLang(l) {
     b.classList.toggle('active', b.dataset.lang === l);
   });
   document.querySelectorAll('[data-pt][data-en]').forEach(el => {
-    if (el.querySelector('.highlight') || el.dataset[l].includes('<span')) {
+    if (el.dataset.html === 'true' || el.querySelector('.highlight') || el.dataset[l].includes('<span') || el.dataset[l].includes('<br')) {
       el.innerHTML = el.dataset[l];
     } else {
       el.textContent = el.dataset[l];
@@ -473,6 +704,203 @@ function setLang(l) {
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('lang') || 'pt';
   setLang(saved);
+
+  
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    direction: 'vertical',
+    smooth: true,
+    lerp: 0.08,
+  });
+
+  
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        lenis.scrollTo(target, { offset: -80 });
+      }
+    });
+  });
+
+  
+  gsap.registerPlugin(ScrollTrigger);
+
+  
+  const heroInner = document.querySelector('.hero-inner');
+  if (heroInner) {
+    const children = heroInner.children;
+    gsap.fromTo(children,
+      { y: 30, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.1, duration: 0.8, ease: 'power3.out', delay: 0.2 }
+    );
+
+    const heroGif = document.querySelector('.hero-gif');
+    if (heroGif) {
+      gsap.fromTo(heroGif,
+        { scale: 0.92, opacity: 0, y: 20 },
+        { scale: 1, opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.3 }
+      );
+    }
+  }
+
+  
+  document.querySelectorAll('.metrics, .tech-grid, .team-grid, .process-steps, .comparison-grid, .problem-grid, .faq-grid, .gallery-grid, .logos-strip, .timeline, .trust-indicators, .about-features').forEach(el => {
+    const directChildren = el.children;
+    gsap.fromTo(directChildren,
+      { y: 30, opacity: 0 },
+      {
+        y: 0, opacity: 1,
+        stagger: 0.08,
+        duration: 0.6,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+        }
+      }
+    );
+  });
+
+  
+  document.querySelectorAll('.section h2, .section-tag').forEach(el => {
+    gsap.fromTo(el,
+      { y: 20, opacity: 0 },
+      {
+        y: 0, opacity: 1,
+        duration: 0.6,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 90%',
+        }
+      }
+    );
+  });
+
+  
+  const aboutContent = document.querySelector('.about-content');
+  const aboutImage = document.querySelector('.about-image');
+  if (aboutContent && aboutImage) {
+    gsap.fromTo(aboutContent, { x: -40, opacity: 0 }, {
+      x: 0, opacity: 1, duration: 0.8, ease: 'power2.out',
+      scrollTrigger: { trigger: aboutContent, start: 'top 80%' }
+    });
+    gsap.fromTo(aboutImage, { x: 40, opacity: 0 }, {
+      x: 0, opacity: 1, duration: 0.8, ease: 'power2.out', delay: 0.2,
+      scrollTrigger: { trigger: aboutImage, start: 'top 80%' }
+    });
+  }
+
+  
+  const ctaBreak = document.querySelector('.cta-break');
+  if (ctaBreak) {
+    gsap.fromTo(ctaBreak.querySelector('.cta-break-inner'),
+      { y: 40, opacity: 0, scale: 0.97 },
+      {
+        y: 0, opacity: 1, scale: 1,
+        duration: 0.8, ease: 'power2.out',
+        scrollTrigger: { trigger: ctaBreak, start: 'top 80%' }
+      }
+    );
+  }
+
+  
+  document.querySelectorAll('.timeline-item').forEach((item, i) => {
+    gsap.fromTo(item,
+      { x: -20, opacity: 0 },
+      {
+        x: 0, opacity: 1,
+        duration: 0.6,
+        ease: 'power2.out',
+        delay: i * 0.15,
+        scrollTrigger: { trigger: item, start: 'top 85%' }
+      }
+    );
+  });
+
+  
+  ScrollTrigger.create({
+    trigger: '.metrics',
+    start: 'top 70%',
+    onEnter: () => {
+      document.querySelectorAll('.metric-value').forEach(el => {
+        const text = el.textContent.trim();
+        const match = text.match(/^([+~]?)(\d+)(.*)/);
+        if (!match) return;
+        const prefix = match[1];
+        const target = parseInt(match[2]);
+        const suffix = match[3];
+        gsap.to({ val: 0 }, {
+          val: target,
+          duration: 1.5,
+          ease: 'power2.out',
+          onUpdate: function() {
+            el.textContent = prefix + Math.round(this.targets()[0].val) + suffix;
+          }
+        });
+      });
+    },
+    once: true
+  });
+
+  
+  function hideElfsightBadge() {
+    document.querySelectorAll('a.eapps-link, a[data-state="instant-open"]').forEach(el => {
+      el.style.setProperty('display', 'none', 'important');
+      el.style.setProperty('visibility', 'hidden', 'important');
+      el.style.setProperty('height', '0', 'important');
+      el.style.setProperty('overflow', 'hidden', 'important');
+    });
+  }
+  setTimeout(hideElfsightBadge, 3000);
+  setTimeout(hideElfsightBadge, 6000);
+
+  
+  const header = document.querySelector('.site-header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 200);
+    }, { passive: true });
+  }
+
+  
+  const scrollBtn = document.createElement('button');
+  scrollBtn.setAttribute('aria-label', 'Scroll to top');
+  scrollBtn.className = 'scroll-top-btn';
+  scrollBtn.innerHTML = '↑';
+  scrollBtn.addEventListener('click', () => lenis.scrollTo(0));
+  document.body.appendChild(scrollBtn);
+
+  if ('IntersectionObserver' in window) {
+    const footerObserver = new IntersectionObserver(([entry]) => {
+      const show = !entry.isIntersecting;
+      scrollBtn.classList.toggle('visible', show);
+    }, { threshold: 0 });
+    footerObserver.observe(document.querySelector('.site-footer'));
+  }
+
+  
+  const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
+  if ('IntersectionObserver' in window && navLinks.length > 0) {
+    const sections = [];
+    navLinks.forEach(link => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) sections.push({ el: target, link });
+    });
+    if (sections.length > 0) {
+      const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          const section = sections.find(s => s.el === entry.target);
+          if (!section) return;
+          section.link.classList.toggle('active', entry.isIntersecting);
+        });
+      }, { threshold: 0.2, rootMargin: '-64px 0px -50% 0px' });
+      sections.forEach(s => navObserver.observe(s.el));
+    }
+  }
 
   
   const hamburger = document.getElementById('hamburgerBtn');
@@ -489,72 +917,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  
-  const fadeEls = document.querySelectorAll('.section, .stats-bar, .trust-bar');
-  if ('IntersectionObserver' in window) {
-    const fadeObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          fadeObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    fadeEls.forEach(el => {
-      el.classList.add('fade-in');
-      fadeObserver.observe(el);
-    });
-  }
-
-  
-  const statsBar = document.querySelector('.stats-bar');
-  if (statsBar && 'IntersectionObserver' in window) {
-    const countObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateStats();
-          countObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    countObserver.observe(statsBar);
-  }
-
-  function animateStats() {
-    document.querySelectorAll('.stat-num').forEach(el => {
-      const text = el.textContent.trim();
-      const match = text.match(/^(~?)(\d+)(.*)/);
-      if (!match) return;
-      const prefix = match[1];
-      const target = parseInt(match[2]);
-      const suffix = match[3];
-      let current = 0;
-      const duration = 1200;
-      const step = Math.max(1, Math.floor(target / (duration / 16)));
-      const timer = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          current = target;
-          clearInterval(timer);
-        }
-        el.textContent = prefix + current + suffix;
-      }, 16);
-    });
-  }
-
-  
-  function hideElfsightBadge() {
-    document.querySelectorAll('a.eapps-link, a[data-state="instant-open"]').forEach(el => {
-      el.style.setProperty('display', 'none', 'important');
-      el.style.setProperty('visibility', 'hidden', 'important');
-      el.style.setProperty('opacity', '0', 'important');
-      el.style.setProperty('height', '0', 'important');
-      el.style.setProperty('overflow', 'hidden', 'important');
-    });
-  }
-  setTimeout(hideElfsightBadge, 3000);
-  setTimeout(hideElfsightBadge, 6000);
 });
 </script>
 
