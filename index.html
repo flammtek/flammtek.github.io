@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FlammTek - Pioneering Plasma Technology - FlammTek</title>
   <link rel="canonical" href="https://flammtek.github.io/" />
-  <link rel="icon" type="image/svg+xml" href="/images/flammtek_lip.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/flammtek_lip.svg" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
   <meta name="description" content="Revolutionary cold plasma solutions for sustainable agriculture and eco-friendly industrial waste treatment. Transforming seeds and recycling MDF residues." />
   
   
@@ -20,24 +20,30 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://flammtek.github.io/" />
 
-<meta property="og:image" content="https://flammtek.github.io/images/flammtek-preview.png" /><meta property="og:site_name" content="FlammTek - Plasma Innovation" />
+<meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.ba919e2ee6897b215bdb1c9c9040288a2c1c09e1c8e9166a9d7322b0fdc1f3e3.css" />
+  <link rel="stylesheet" href="/css/main.min.451376c7e68781fa256189b137991c8b3c8cd62a047278a0e2ee1599c63bd388.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
 
-<link rel="stylesheet" href="/css/custom.min.f31b57f0c36d3e79fb5f897be674ca522ebc4d4b0f8bc7c28450011c7ec4173c.css" />
+<link rel="stylesheet" href="/css/custom.min.1518e129d4f627f58c4a3454d2063509f474b43d995712734ca496b5a534ff33.css" />
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://www.clarity.ms" crossorigin />
 <link rel="preconnect" href="https://js.hs-scripts.com" crossorigin />
 <link rel="preconnect" href="https://static.elfsight.com" crossorigin />
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
 
 
 <script type="application/ld+json">
@@ -91,42 +97,34 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
 </head>
 
   <body>
     
     <main>
       
-
 <div class="homepage-bg">
-
-
-<div class="lang-switch">
-  <button class="lang-btn active" data-lang="pt" onclick="setLang('pt')">PT</button>
-  <span class="lang-divider">/</span>
-  <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
-</div>
 
 
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo">
-      <img src="/images/flammtek_lhp_tb.svg" alt="FlammTek" class="logo-img" />
+      <img src="/images/flammtekbw.png" alt="FlammTek" class="logo-img logo-img-light" />
+      <img src="/images/flammtek_lhp_tb.svg" alt="FlammTek" class="logo-img logo-img-dark" />
     </a>
-    <nav class="main-nav" id="mainNav">
-      <a href="#tecnologia" data-pt="Tecnologia" data-en="Technology">Tecnologia</a>
-      <a href="#processo" data-pt="Como funciona" data-en="How it works">Como funciona</a>
-      <a href="#team" data-pt="Equipe" data-en="Team">Equipe</a>
-      <a href="#contato" class="nav-cta" data-pt="Contato" data-en="Contact">Contato</a>
-    </nav>
+    <div class="header-right">
+      <nav class="main-nav" id="mainNav">
+        <a href="#tecnologia" data-pt="Tecnologia" data-en="Technology">Tecnologia</a>
+        <a href="#como-funciona" data-pt="Como funciona" data-en="How it works">Como funciona</a>
+        <a href="#team" data-pt="Equipe" data-en="Team">Equipe</a>
+        <a href="#contato" class="nav-cta" data-pt="Contato" data-en="Contact">Contato</a>
+      </nav>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="pt" onclick="setLang('pt')">PT</button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -134,86 +132,163 @@
 </header>
 
 
-<section class="hero">
-  <div class="hero-inner">
-    <p class="hero-label" data-pt="Spin-off UFPR · Patente depositada · TRL-4" data-en="UFPR Spin-off · Patent filed · TRL-4">Spin-off UFPR · Patente depositada · TRL-4</p>
-    <h1 data-pt="+25% de vigor germinativo.<br>25 segundos. Zero químicos." data-en="+25% germination vigor.<br>25 seconds. Zero chemicals." data-html="true">+25% de vigor germinativo.<br>25 segundos. Zero químicos.</h1>
-    <p class="hero-desc" data-pt="Plasma frio que trata sementes e recicla MDF — usando apenas eletricidade." data-en="Cold plasma that treats seeds and recycles MDF — using only electricity.">Plasma frio que trata sementes e recicla MDF — usando apenas eletricidade.</p>
+<section class="hero-plasma" id="heroSection">
+  
+  <canvas id="plasmaCanvas" class="hero-plasma-canvas" aria-hidden="true"></canvas>
 
-    <div class="hero-for">
-      <span class="hero-for-label" data-pt="Para" data-en="For">Para</span>
-      <span class="hero-for-pill" data-pt="Agronegócio sustentável" data-en="Sustainable agriculture">Agronegócio sustentável</span>
-      <span class="hero-for-pill" data-pt="Gestão de resíduos industriais" data-en="Industrial waste management">Gestão de resíduos industriais</span>
+  <div class="hero-plasma-inner">
+    
+    <div class="hero-left">
+      <p class="hero-label" data-pt="Spin-off UFPR · Patente depositada" data-en="UFPR Spin-off · Patent filed">Spin-off UFPR · Patente depositada</p>
+      <div class="hero-headline-block">
+        <span class="hero-top-line" data-pt="PLASMA FRIO" data-en="COLD PLASMA">PLASMA FRIO</span>
+        <div class="hero-for-row">
+          <span class="hero-for-label" data-pt="para" data-en="for">para</span><span class="hero-rotating-words" id="rotatingWords">
+              <span data-pt="Sementes" data-en="Seeds">Sementes</span>
+              <span data-pt="Alimentos" data-en="Food">Alimentos</span>
+              <span data-pt="Embalagens" data-en="Packaging">Embalagens</span>
+              <span data-pt="MDF" data-en="MDF">MDF</span>
+            </span>
+        </div>
+      </div>
+      <a href="#como-funciona" class="btn-primary hero-cta" data-pt="Veja como funciona →" data-en="See how it works →">Veja como funciona →</a>
     </div>
 
-    <div class="hero-actions">
-      <a href="#tecnologia" class="btn-primary" data-pt="Ver a tecnologia" data-en="See the technology">Ver a tecnologia</a>
-      <a href="#contato" class="btn-outline" data-pt="Fale conosco" data-en="Contact us">Fale conosco</a>
+    
+    <div class="hero-right">
+      <p class="hero-mechanism" data-pt="Uma única tecnologia para múltiplas indústrias. O poder do plasma para substituir de vez os químicos da sua produção." data-en="A single technology for multiple industries. The power of plasma to permanently replace chemicals in your production.">Uma única tecnologia para múltiplas indústrias. O poder do plasma para substituir de vez os químicos da sua produção.</p>
+      <ul class="hero-stat-list">
+        <li data-pt="Substitui químicos, fungicidas e primers" data-en="Replaces chemicals, fungicides and primers">Substitui químicos, fungicidas e primers</li>
+        <li data-pt="Utiliza apenas ar atmosférico e energia elétrica" data-en="Uses only atmospheric air and standard electricity">Utiliza apenas ar atmosférico e energia elétrica</li>
+        <li data-pt="Zero geração de resíduos e passivos ambientais" data-en="Zero generation of waste and environmental liabilities">Zero geração de resíduos e passivos ambientais</li>
+        <li data-pt="Tecnologia patenteada, validada na UFPR" data-en="Patented technology, laboratory validated">Tecnologia patenteada, validada na UFPR</li>
+      </ul>
     </div>
-    <p class="hero-trust" data-pt="Sem químicos · Ar atmosférico · Operação simples" data-en="No chemicals · Atmospheric air · Simple operation">Sem químicos · Ar atmosférico · Operação simples</p>
   </div>
-  <div class="hero-visual">
-    <img src="/images/plasma/GifPlasma_opt.webp" alt="Cold Plasma DBD" class="hero-gif" />
+
+  <div class="hero-scroll-indicator">
+    <span data-pt="Role para baixo" data-en="Scroll down">Role para baixo</span>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
   </div>
 </section>
 
 
-<div class="logos-strip">
-  <span class="partner-name">UFPR</span>
-  <span class="partner-name">IDR-Paraná</span>
-  <span class="partner-name">GNanoAgro</span>
-  <span class="partner-name">Catalisa ICT</span>
-  <span class="partner-name">Programa BASE</span>
-  <span class="partner-name">PRIME</span>
+<div class="logos-strip-wrapper">
+  <div class="logos-track">
+    
+    <div class="logos-group">
+      <span class="partner-name">UFPR</span>
+      <span class="partner-name">IDR-Paraná</span>
+      <span class="partner-name">GNanoAgro</span>
+      <span class="partner-name">Catalisa ICT</span>
+      <span class="partner-name">Programa BASE</span>
+      <span class="partner-name">PRIME</span>
+    </div>
+    
+    <div class="logos-group" aria-hidden="true">
+      <span class="partner-name">UFPR</span>
+      <span class="partner-name">IDR-Paraná</span>
+      <span class="partner-name">GNanoAgro</span>
+      <span class="partner-name">Catalisa ICT</span>
+      <span class="partner-name">Programa BASE</span>
+      <span class="partner-name">PRIME</span>
+    </div>
+  </div>
 </div>
 
 
-<section class="section problem">
+<section class="section metrics">
   <div class="section-inner">
-    <span class="section-tag" data-pt="O problema" data-en="The problem">O problema</span>
-    <h2 data-pt="A agricultura depende de químicos.<br>O desperdício de MDF vai para aterros." data-en="Agriculture depends on chemicals.<br>MDF waste goes to landfills.">A agricultura depende de químicos.<br>O desperdício de MDF vai para aterros.</h2>
-
-    <div class="problem-grid">
-      <div class="problem-card">
-        <div class="problem-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 14.762a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"/>
-            <path d="M17.5 10.5c-1.5 0-3-.5-3-2.5a2.5 2.5 0 0 1 5 0c0 1.5-1 2.5-2 2.5Z" opacity=".4"/>
-            <path d="M12 2C6.5 2 2 6.5 2 12c0 2 .5 3.5 1.5 5"/>
-            <path d="M22 12c0 5.5-4.5 10-10 10"/>
-            <path d="M12 2c5.5 0 10 4.5 10 10"/>
-            <path d="M12 22c1.5 0 3-.5 4.5-1.5 1.5-1 2.5-2.5 3.5-4"/>
-          </svg>
-        </div>
-        <h4 class="problem-title" data-pt="Sementes" data-en="Seeds">Sementes</h4>
-        <p data-pt="Tratamento químico convencional requer insumos recorrentes, aumenta custos e gera resíduos ambientais. A indústria agrícola gasta bilhões anualmente." data-en="Conventional chemical treatment requires recurring inputs, increases costs and generates environmental waste. The agricultural industry spends billions annually.">Tratamento químico convencional requer insumos recorrentes, aumenta custos e gera resíduos ambientais. A indústria agrícola gasta bilhões anualmente.</p>
-        <span class="problem-stat" data-pt="US$ 60B+ gasto em insumos químicos/ano" data-en="US$ 60B+ spent on chemical inputs/year">US$ 60B+ gasto em insumos químicos/ano</span>
+    <span class="section-tag" data-pt="Resultados" data-en="Results">Resultados</span>
+    <h2 data-pt="Números que falam por si." data-en="Numbers that speak for themselves.">Números que falam por si.</h2>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-value">+25%</span>
+        <span class="metric-label" data-pt="Vigor germinativo (sementes)" data-en="Germination vigor (seeds)">Vigor germinativo (sementes)</span>
       </div>
-
-      <div class="problem-icon-separator">
-        <svg width="24" height="48" viewBox="0 0 24 48" fill="none"><path d="M12 0L12 40M6 34L12 42L18 34" stroke="var(--plasma)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="metric-card">
+        <span class="metric-value">+274%</span>
+        <span class="metric-label" data-pt="Adesão em embalagens" data-en="Packaging adhesion">Adesão em embalagens</span>
       </div>
-
-      <div class="problem-card">
-        <div class="problem-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M8 2h8l4 10H4L8 2Z"/>
-            <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/>
-            <path d="M10 21V15"/>
-            <path d="M14 21V15"/>
-          </svg>
-        </div>
-        <h4 class="problem-title" data-pt="MDF" data-en="MDF">MDF</h4>
-        <p data-pt="Resinas de formaldeído impedem a reciclagem do MDF. Sem alternativa viável, milhões de toneladas vão para aterros — liberando carcinógenos conhecidos." data-en="Formaldehyde resins prevent MDF recycling. Without a viable alternative, millions of tons go to landfills — releasing known carcinogens.">Resinas de formaldeído impedem a reciclagem do MDF. Sem alternativa viável, milhões de toneladas vão para aterros — liberando carcinógenos conhecidos.</p>
-        <span class="problem-stat" data-pt="~70M ton/ano de MDF descartado" data-en="~70M tons/year MDF discarded">~70M ton/ano de MDF descartado</span>
+      <div class="metric-card">
+        <span class="metric-value">81%</span>
+        <span class="metric-label" data-pt="Remoção resina UF (MDF)" data-en="UF resin removal (MDF)">Remoção resina UF (MDF)</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-value">~25°C</span>
+        <span class="metric-label" data-pt="Sem dano térmico" data-en="No thermal damage">Sem dano térmico</span>
       </div>
     </div>
 
-    <div class="problem-solution">
-      <p class="problem-solution-text" data-pt="A solução? Uma única tecnologia: plasma frio, pressão atmosférica, apenas eletricidade. Sem químicos. Sem resíduos." data-en="The solution? A single technology: cold plasma, atmospheric pressure, just electricity. No chemicals. No waste.">A solução? Uma única tecnologia: plasma frio, pressão atmosférica, apenas eletricidade. Sem químicos. Sem resíduos.</p>
+    <div class="trust-indicators">
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
+        <span data-pt="Patente depositada no Brasil" data-en="Patent filed in Brazil">Patente depositada no Brasil</span>
+      </span>
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
+        <span data-pt="TRL 4-5 validado" data-en="TRL 4-5 validated">TRL 4-5 validado</span>
+      </span>
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
+        <span data-pt="Spin-off UFPR" data-en="UFPR Spin-off">Spin-off UFPR</span>
+      </span>
     </div>
   </div>
 </section>
+
+
+<section id="como-funciona" class="section explainer">
+  <span class="section-tag" data-pt="A Tecnologia" data-en="The Technology">A Tecnologia</span>
+  <h2 data-pt="INOVAÇÃO PROFUNDA. APLICAÇÃO SIMPLES." data-en="DEEP INNOVATION. SIMPLE APPLICATION.">INOVAÇÃO PROFUNDA. APLICAÇÃO SIMPLES.</h2>
+  <p class="section-desc" data-pt="Transformamos o ar em inovação industrial. O plasma frio FlammTek trata materiais complexos em segundos, eliminando toneladas de químicos tóxicos da sua produção." data-en="We transform air into industrial innovation. FlammTek's cold plasma treats complex materials in seconds, eliminating tons of toxic chemicals from your production.">Transformamos o ar em inovação industrial. O plasma frio FlammTek trata materiais complexos em segundos, eliminando toneladas de químicos tóxicos da sua produção.</p>
+
+  <div class="explainer-grid">
+    <div class="explainer-card explainer-problem">
+      <div class="explainer-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+      </div>
+      <h3 data-pt="O problema atual" data-en="The current problem">O problema atual</h3>
+      <p data-pt="A indústria depende de químicos caros e resinas tóxicas. Isso infla custos operacionais, polui o meio ambiente e trava inovações essenciais (como a reciclagem de MDF)." data-en="Industry relies on expensive chemicals and toxic resins. This inflates operating costs, pollutes the environment, and blocks essential innovations (like MDF recycling).">A indústria depende de químicos caros e resinas tóxicas. Isso infla custos operacionais, polui o meio ambiente e trava inovações essenciais (como a reciclagem de MDF).</p>
+    </div>
+
+    <div class="explainer-arrow">
+      <div class="plasma-pulse-line"><span class="plasma-dot"></span></div>
+    </div>
+
+    <div class="explainer-card explainer-solution">
+      <div class="explainer-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <h3 data-pt="A solução FlammTek" data-en="The FlammTek solution">A solução FlammTek</h3>
+      <p data-pt="Nossos reatores utilizam eletricidade e ar para tratar superfícies instantaneamente. O resultado é uma desinfecção e ativação de alta performance com zero insumos químicos." data-en="Our reactors use electricity and air to treat surfaces instantly. The result is high-performance disinfection and activation with zero chemical inputs.">Nossos reatores utilizam eletricidade e ar para tratar superfícies instantaneamente. O resultado é uma desinfecção e ativação de alta performance com zero insumos químicos.</p>
+    </div>
+  </div>
+
+  <div class="explainer-steps">
+    <div class="explainer-step">
+      <span class="explainer-step-num">1</span>
+      <h4 data-pt="Integração Rápida" data-en="Fast Integration">Integração Rápida</h4>
+      <p data-pt="Sistema 'retrofit' que se adapta imediatamente às esteiras e linhas de produção que você já utiliza." data-en="A 'retrofit' system that adapts immediately to the belts and production lines you already use.">Sistema 'retrofit' que se adapta imediatamente às esteiras e linhas de produção que você já utiliza.</p>
+    </div>
+    <div class="explainer-step">
+      <span class="explainer-step-num">2</span>
+      <h4 data-pt="Operação a Frio" data-en="Cold Operation">Operação a Frio</h4>
+      <p data-pt="Trata materiais em segundos a ~25°C, usando apenas ar e eletricidade. Fim da compra de químicos." data-en="Treats materials in seconds at ~25°C, using only air and electricity. End the purchase of chemicals.">Trata materiais em segundos a ~25°C, usando apenas ar e eletricidade. Fim da compra de químicos.</p>
+    </div>
+    <div class="explainer-step">
+      <span class="explainer-step-num">3</span>
+      <h4 data-pt="Impacto ESG" data-en="ESG Impact">Impacto ESG</h4>
+      <p data-pt="Processo 100% limpo. Elimine passivos ambientais, toxicidade e custos de descarte de resíduos." data-en="100% clean process. Eliminate environmental liabilities, toxicity, and waste disposal costs.">Processo 100% limpo. Elimine passivos ambientais, toxicidade e custos de descarte de resíduos.</p>
+    </div>
+  </div>
+
+  <div class="poc-cta">
+    <span class="poc-cta-label" data-pt="Pronto para testar?" data-en="Ready to test?">Pronto para testar?</span>
+    <a href="#contato" class="btn-poc" data-pt="Agende um teste com seu material →" data-en="Book a trial with your material →">Agende um teste com seu material →</a>
+  </div>
+</section>
+
 
 
 <section class="section comparison">
@@ -282,51 +357,11 @@
 </section>
 
 
-<section class="section metrics">
-  <div class="section-inner">
-    <div class="metrics-grid">
-      <div class="metric-card">
-        <span class="metric-value">+25%</span>
-        <span class="metric-label" data-pt="Vigor germinativo" data-en="Germination vigor">Vigor germinativo</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-value">22%</span>
-        <span class="metric-label" data-pt="Germinação mais rápida" data-en="Faster germination">Germinação mais rápida</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-value">25s</span>
-        <span class="metric-label" data-pt="Tempo de tratamento" data-en="Treatment time">Tempo de tratamento</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-value">~25°C</span>
-        <span class="metric-label" data-pt="Temperatura de operação" data-en="Operating temperature">Temperatura de operação</span>
-      </div>
-    </div>
-
-    
-    <div class="trust-indicators">
-      <span class="trust-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
-        <span data-pt="Patente depositada no Brasil" data-en="Patent filed in Brazil">Patente depositada no Brasil</span>
-      </span>
-      <span class="trust-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
-        <span data-pt="TRL 4-5 validado" data-en="TRL 4-5 validated">TRL 4-5 validado</span>
-      </span>
-      <span class="trust-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline d="M22 4 12 14.01 9 11.01"/></svg>
-        <span data-pt="Spin-off UFPR" data-en="UFPR Spin-off">Spin-off UFPR</span>
-      </span>
-    </div>
-  </div>
-</section>
-
-
 <section id="tecnologia" class="section tech">
   <div class="section-inner">
     <span class="section-tag" data-pt="Aplicações" data-en="Applications">Aplicações</span>
-    <h2 data-pt="Uma tecnologia, dois mercados." data-en="One technology, two markets.">Uma tecnologia, dois mercados.</h2>
-    <p class="section-desc" data-pt="A mesma base tecnológica aplicada a problemas diferentes. Plasma frio DBD em pressão atmosférica." data-en="The same technology applied to different problems. Cold DBD plasma at atmospheric pressure.">A mesma base tecnológica aplicada a problemas diferentes. Plasma frio DBD em pressão atmosférica.</p>
+    <h2 data-pt="Uma tecnologia, quatro mercados." data-en="One technology, four markets.">Uma tecnologia, quatro mercados.</h2>
+    <p class="section-desc" data-pt="A mesma base DBD gera RONS em pressão atmosférica — adaptada a cada desafio industrial. Do campo à fábrica, do alimento à embalagem." data-en="The same DBD technology generates RONS at atmospheric pressure — adapted to each industrial challenge. From field to factory, from food to packaging.">A mesma base DBD gera RONS em pressão atmosférica — adaptada a cada desafio industrial. Do campo à fábrica, do alimento à embalagem.</p>
 
     <div class="tech-grid">
       <a href="/seed-plasma/" class="tech-card">
@@ -360,54 +395,44 @@
           <li data-pt="Reduz custo de descarte e passivo ambiental" data-en="Reduces disposal cost and environmental liability">Reduz custo de descarte e passivo ambiental</li>
         </ul>
         <span class="card-link" data-pt="Ver dados" data-en="See data">Ver dados</span>        </div>      </a>
-    </div>
-  </div>
-</section>
 
-
-<section id="processo" class="section process">
-  <div class="section-inner">
-    <span class="section-tag" data-pt="Como funciona" data-en="How it works">Como funciona</span>
-    <h2 data-pt="Simples. Rápido. Sem resíduos." data-en="Simple. Fast. Zero waste.">Simples. Rápido. Sem resíduos.</h2>
-
-    <div class="process-steps">
-      <div class="process-step">
-        <span class="step-num">1</span>
-        <h4 data-pt="Alimenta o reator" data-en="Feed the reactor">Alimenta o reator</h4>
-        <p data-pt="Sementes ou resíduos de MDF entram no reator DBD em esteira contínua." data-en="Seeds or MDF waste enter the DBD reactor on a continuous conveyor.">Sementes ou resíduos de MDF entram no reator DBD em esteira contínua.</p>
+      <div class="tech-card">
+        <div class="card-img">
+          <img src="/images/plasma/lab-work-2.webp" alt="PAW — Plasma Activated Water" loading="lazy" />
+          <span class="card-num">03</span>
+        </div>
+        <div class="card-body">
+          <h3 data-pt="Alimentos Frescos &amp; PAW" data-en="Fresh Produce &amp; PAW">Alimentos Frescos &amp; PAW</h3>
+          <p data-pt="Água Ativada por Plasma (PAW) elimina fungos, bactérias e patógenos e reduz oxidação celular — estendendo o shelf-life sem conservantes químicos. Substitui o cloro." data-en="Plasma Activated Water (PAW) eliminates fungi, bacteria and pathogens, reducing cellular oxidation — extending shelf-life without chemical preservatives. Replaces chlorine.">Água Ativada por Plasma (PAW) elimina fungos, bactérias e patógenos e reduz oxidação celular — estendendo o shelf-life sem conservantes químicos. Substitui o cloro.</p>
+          <ul>
+            <li data-pt="Sanitizante 100% verde (RONS em água)" data-en="100% green sanitizer (RONS in water)">Sanitizante 100% verde (RONS em água)</li>
+            <li data-pt="Redução de perda pós-colheita (ODS 12.3)" data-en="Post-harvest loss reduction (SDG 12.3)">Redução de perda pós-colheita (ODS 12.3)</li>
+            <li data-pt="Sem alterar sabor, odor ou textura" data-en="No alteration to taste, smell, or texture">Sem alterar sabor, odor ou textura</li>
+          </ul>
+          <span class="card-link" data-pt="Saiba mais" data-en="Learn more">Saiba mais</span>
+        </div>
       </div>
-      <div class="process-step">
-        <span class="step-num">2</span>
-        <h4 data-pt="Gera o plasma" data-en="Generate the plasma">Gera o plasma</h4>
-        <p data-pt="Eletricidade ioniza o ar — espécies reativas criam um plasma frio a ~25°C." data-en="Electricity ionizes the air — reactive species create cold plasma at ~25°C.">Eletricidade ioniza o ar — espécies reativas criam um plasma frio a ~25°C.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-num">3</span>
-        <h4 data-pt="Trata o material" data-en="Treat the material">Trata o material</h4>
-        <p data-pt="Em segundos, as propriedades de superfície são modificadas — sem químicos, sem resíduos." data-en="In seconds, surface properties are modified — no chemicals, no waste.">Em segundos, as propriedades de superfície são modificadas — sem químicos, sem resíduos.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-num">4</span>
-        <h4 data-pt="Pronto para uso" data-en="Ready for use">Pronto para uso</h4>
-        <p data-pt="Sementes mais vigorosas ou fibras recicladas — prontas para o próximo passo." data-en="More vigorous seeds or recycled fibers — ready for the next step.">Sementes mais vigorosas ou fibras recicladas — prontas para o próximo passo.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-
-<section class="section cta-break">
-  <div class="section-inner">
-    <div class="cta-break-inner">
-      <h2 data-pt="Pronto para explorar essa tecnologia?" data-en="Ready to explore this technology?">Pronto para explorar essa tecnologia?</h2>
-      <p data-pt="Se você lida com sementes ou resíduos de MDF, a conversa começa por aqui." data-en="If you work with seeds or MDF waste, the conversation starts here.">Se você lida com sementes ou resíduos de MDF, a conversa começa por aqui.</p>
-      <div class="cta-break-actions">
-        <a href="#contato" class="btn-primary cta-btn" data-pt="Fale conosco →" data-en="Talk to us →">Fale conosco →</a>
-        <a href="mailto:flammtek@gmail.com?subject=Interesse%20FlammTek" class="btn-outline cta-btn" data-pt="flammtek@gmail.com" data-en="flammtek@gmail.com">flammtek@gmail.com</a>
+      <div class="tech-card">
+        <div class="card-img">
+          <img src="/images/plasma/equipment-1.webp" alt="Plasma para Embalagens" loading="lazy" />
+          <span class="card-num">04</span>
+        </div>
+        <div class="card-body">
+          <h3 data-pt="Ativação de Embalagens" data-en="Packaging Activation">Ativação de Embalagens</h3>
+          <p data-pt="Plasma incorpora grupos polares na superfície de fibras, aumentando energia superficial e adesão — sem primers, solventes ou pré-tratamentos químicos." data-en="Plasma incorporates polar groups onto fiber surfaces, increasing surface energy and adhesion — without primers, solvents, or chemical pre-treatments.">Plasma incorpora grupos polares na superfície de fibras, aumentando energia superficial e adesão — sem primers, solventes ou pré-tratamentos químicos.</p>
+          <ul>
+            <li data-pt="+274% adesão internal sizing" data-en="+274% internal sizing adhesion">+274% adesão internal sizing</li>
+            <li data-pt="+119% com repelente parafínico" data-en="+119% with paraffinic repellent">+119% com repelente parafínico</li>
+            <li data-pt="Embalagens multicamada com menos adesivo" data-en="Multilayer packaging with less adhesive">Embalagens multicamada com menos adesivo</li>
+          </ul>
+          <span class="card-link" data-pt="Saiba mais" data-en="Learn more">Saiba mais</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <section id="sobre" class="section about">
@@ -705,28 +730,85 @@ document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('lang') || 'pt';
   setLang(saved);
 
-  
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    direction: 'vertical',
-    smooth: true,
-    lerp: 0.08,
-  });
+   
+  const wordsContainer = document.getElementById('rotatingWords');
+  if (wordsContainer) {
+    const words = wordsContainer.querySelectorAll('span');
+    let currentWord = 0;
+    if (words.length > 0) {
+      words[0].classList.add('active');
+      setInterval(() => {
+        const prev = currentWord;
+        words[prev].classList.remove('active');
+        words[prev].classList.add('exit');
+        currentWord = (currentWord + 1) % words.length;
+        words[currentWord].classList.add('active');
+        setTimeout(() => {
+          words[prev].classList.remove('exit');
+        }, 600);
+      }, 2500);
+    }
+  }
 
-  
+   
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       const target = document.querySelector(link.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        lenis.scrollTo(target, { offset: -80 });
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   });
 
-  
-  gsap.registerPlugin(ScrollTrigger);
+   
+  if (typeof gsap !== 'undefined') {
+  if (typeof ScrollTrigger !== 'undefined') gsap.registerPlugin(ScrollTrigger);
+
+   
+  const heroLeft = document.querySelector('.hero-left');
+  const heroRight = document.querySelector('.hero-right');
+  if (heroLeft) {
+    gsap.fromTo(['.hero-label', '.hero-headline-block', '.hero-cta'],
+      { y: 40, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.18, duration: 1.1, ease: 'power3.out', delay: 0.4 }
+    );
+  }
+  if (heroRight) {
+    gsap.fromTo(['.hero-tagline', '.hero-stat-list'],
+      { x: 30, opacity: 0 },
+      { x: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'power3.out', delay: 0.7 }
+    );
+  }
+
+   
+  const explainerCards = document.querySelectorAll('.explainer-card');
+  explainerCards.forEach((card, i) => {
+    gsap.fromTo(card,
+      { y: 40, opacity: 0 },
+      {
+        y: 0, opacity: 1,
+        duration: 0.8,
+        ease: 'power2.out',
+        delay: i * 0.2,
+        scrollTrigger: { trigger: card, start: 'top 85%' }
+      }
+    );
+  });
+
+  const explainerSteps = document.querySelectorAll('.explainer-step');
+  if (explainerSteps.length > 0) {
+    gsap.fromTo(explainerSteps,
+      { y: 20, opacity: 0 },
+      {
+        y: 0, opacity: 1,
+        stagger: 0.12,
+        duration: 0.5,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: explainerSteps[0].parentElement, start: 'top 85%' }
+      }
+    );
+  }
 
   
   const heroInner = document.querySelector('.hero-inner');
@@ -846,6 +928,8 @@ document.addEventListener('DOMContentLoaded', () => {
     once: true
   });
 
+  }  
+
   
   function hideElfsightBadge() {
     document.querySelectorAll('a.eapps-link, a[data-state="instant-open"]').forEach(el => {
@@ -870,8 +954,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollBtn = document.createElement('button');
   scrollBtn.setAttribute('aria-label', 'Scroll to top');
   scrollBtn.className = 'scroll-top-btn';
-  scrollBtn.innerHTML = '↑';
-  scrollBtn.addEventListener('click', () => lenis.scrollTo(0));
+  scrollBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>';
+  scrollBtn.addEventListener('click', () => {
+    if (typeof lenis !== 'undefined' && lenis) {
+      lenis.scrollTo(0);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
   document.body.appendChild(scrollBtn);
 
   if ('IntersectionObserver' in window) {
@@ -917,9 +1007,106 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+   
+  (function() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const canvas = document.getElementById('plasmaCanvas');
+    if (!canvas) return;
+
+    const VS = 'attribute vec2 a;void main(){gl_Position=vec4(a,0,1);}';
+    const FS = `precision mediump float;
+uniform float T;uniform vec2 R;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p),u=f*f*(3.0-2.0*f);return mix(mix(h(i),h(i+vec2(1,0)),u.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),u.x),u.y);}
+void main(){
+  vec2 pos=(gl_FragCoord.xy-0.5*R)/R.y;
+  vec2 id=floor(pos*80.0);vec2 f=fract(pos*80.0)-0.5;
+  float nr=h(id);
+  float flicker=sin(T*6.0+nr*6.28)*0.25+0.75;
+  float patches=smoothstep(0.20,0.75,n(id*0.05+T*0.15));
+  float rhythm=clamp(sin(T*0.7)*2.0+1.0,0.0,1.0);
+  float sa=smoothstep(0.1,0.8,patches*(rhythm*0.85+0.15))*(nr*0.5+0.5);
+  float spark=smoothstep(0.4,0.05,length(f))*sa*flicker;
+  float wire=max(smoothstep(0.08,0.0,abs(f.x)),smoothstep(0.08,0.0,abs(f.y)));
+  float bg=n(pos*2.0+T*0.1);
+  vec3 col=mix(vec3(0.01,0.02,0.01),vec3(0.02,0.08,0.04),bg);
+  col+=vec3(0.0,0.25,0.10)*(1.0-smoothstep(0.0,1.2,length(pos)))*(0.6+0.4*rhythm);
+  col+=vec3(0.10,0.70,0.30)*wire*0.15*(0.6+0.4*rhythm);
+  col+=mix(vec3(0.10,0.70,0.30),vec3(0.40,1.00,0.50),spark)*spark*2.5;
+  col+=vec3(0.90,1.00,0.90)*pow(spark,3.0)*1.5;
+  col*=smoothstep(1.3,0.2,length(pos));
+  gl_FragColor=vec4(clamp(col,0.0,1.0),1.0);
+}`;
+
+    function init() {
+      var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+      if (!gl) { console.warn('[plasma] WebGL not supported'); return; }
+
+      function mkShader(src, type) {
+        var s = gl.createShader(type);
+        gl.shaderSource(s, src); gl.compileShader(s);
+        if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+          console.error('[plasma] shader compile error:', gl.getShaderInfoLog(s)); return null;
+        }
+        return s;
+      }
+
+      var vs = mkShader(VS, gl.VERTEX_SHADER);
+      var fs = mkShader(FS, gl.FRAGMENT_SHADER);
+      if (!vs || !fs) return;
+
+      var prog = gl.createProgram();
+      gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+      if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) {
+        console.error('[plasma] link error:', gl.getProgramInfoLog(prog)); return;
+      }
+      gl.useProgram(prog);
+
+      var buf = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+      var al = gl.getAttribLocation(prog, 'a');
+      gl.enableVertexAttribArray(al);
+      gl.vertexAttribPointer(al, 2, gl.FLOAT, false, 0, 0);
+
+      var uT = gl.getUniformLocation(prog, 'T');
+      var uR = gl.getUniformLocation(prog, 'R');
+      var DPR = Math.min(window.devicePixelRatio || 1, 1.5);
+
+      function resize() {
+        var w = canvas.offsetWidth || window.innerWidth;
+        var h = canvas.offsetHeight || window.innerHeight;
+        canvas.width = Math.round(w * DPR);
+        canvas.height = Math.round(h * DPR);
+        gl.viewport(0, 0, canvas.width, canvas.height);
+      }
+      resize();
+      window.addEventListener('resize', resize, { passive: true });
+
+      var t0 = performance.now();
+      var rafId = null;
+      function draw() {
+        gl.uniform1f(uT, (performance.now() - t0) * 0.001);
+        gl.uniform2f(uR, canvas.width, canvas.height);
+        gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        rafId = requestAnimationFrame(draw);
+      }
+
+      canvas.classList.add('ready');
+      draw();
+
+      document.addEventListener('visibilitychange', function() {
+        if (document.hidden) { cancelAnimationFrame(rafId); rafId = null; }
+        else { draw(); }
+      });
+    }
+
+    setTimeout(init, 150);
+  })();
+
 });
 </script>
-
 
     </main>
     
