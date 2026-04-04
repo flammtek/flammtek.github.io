@@ -20,15 +20,18 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://flammtek.github.io/" />
 
-<meta property="og:site_name" content="FlammTek - Plasma Innovation" />
+<meta property="og:image" content="https://flammtek.github.io/images/logo-share.webp" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" /><meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.451376c7e68781fa256189b137991c8b3c8cd62a047278a0e2ee1599c63bd388.css" />
+  <link rel="stylesheet" href="/css/main.min.4758dc692b2b99ad3bf4b01de46cedb64998db327010e78bb61a178dec22d516.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
 
-<link rel="stylesheet" href="/css/custom.min.1518e129d4f627f58c4a3454d2063509f474b43d995712734ca496b5a534ff33.css" />
+<link rel="stylesheet" href="/css/custom.min.7cb9582214778cdafda8099baf1e7c4275ec80a5f8897230abc577c0a8910e68.css" />
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -727,7 +730,10 @@ function setLang(l) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('lang') || 'pt';
+  const saved = localStorage.getItem('lang') || (() => {
+    const bl = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    return bl.startsWith('pt') ? 'pt' : 'en';
+  })();
   setLang(saved);
 
    
