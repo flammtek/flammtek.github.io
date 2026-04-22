@@ -1,0 +1,47 @@
+<svg width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frame" x1="112" y1="96" x2="368" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F0E8"/>
+      <stop offset="0.45" stop-color="#D8D1C6"/>
+      <stop offset="1" stop-color="#F9F8F3"/>
+    </linearGradient>
+    <linearGradient id="core" x1="160" y1="144" x2="320" y2="336" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3D7FF"/>
+      <stop offset="0.38" stop-color="#C98AF4"/>
+      <stop offset="1" stop-color="#8D3FD6"/>
+    </linearGradient>
+    <filter id="shadow" x="72" y="78" width="336" height="338" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#4C1D95" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glow" x="0" y="0" width="480" height="480" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <pattern id="grid" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M12 0H0V12" stroke="#FFFFFF" stroke-opacity="0.46" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="centerGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240 240) rotate(90) scale(102)">
+      <stop stop-color="#FFF4FF"/>
+      <stop offset="0.45" stop-color="#E8BEFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#B44CF0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g opacity="0.85" filter="url(#glow)">
+    <rect x="232" y="32" width="16" height="112" rx="8" fill="#B44CF0"/>
+    <rect x="232" y="336" width="16" height="112" rx="8" fill="#B44CF0"/>
+    <rect x="32" y="232" width="112" height="16" rx="8" fill="#D796FF"/>
+    <rect x="336" y="232" width="112" height="16" rx="8" fill="#D796FF"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="96" width="256" height="256" rx="30" fill="url(#frame)"/>
+    <rect x="126" y="110" width="228" height="228" rx="24" fill="#CFCAC0" fill-opacity="0.7"/>
+    <rect x="144" y="128" width="192" height="192" rx="20" fill="#34104E"/>
+    <rect x="152" y="136" width="176" height="176" rx="16" fill="url(#core)"/>
+    <rect x="152" y="136" width="176" height="176" rx="16" fill="url(#grid)" opacity="0.58"/>
+    <rect x="144" y="128" width="192" height="192" rx="20" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="4"/>
+  </g>
+
+  <circle cx="240" cy="240" r="102" fill="url(#centerGlow)"/>
+  <rect x="160" y="144" width="160" height="160" rx="14" stroke="#F8E9FF" stroke-opacity="0.58" stroke-width="3"/>
+</svg>
