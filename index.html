@@ -24,7 +24,7 @@
 <meta property="og:image:height" content="630" /><meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.f2e38634e072be008601a0b7ba270b7543f44a4dafb2ad1ae91186da451d00f5.css" />
+  <link rel="stylesheet" href="/css/main.min.b4936ef34afeaafa21ba4c7d6aed479ad9cc4b4ed90416676efe434350bb35ef.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
@@ -1040,24 +1040,6 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-  <section class="section video">
-  <div class="section-inner">
-    <span class="section-tag" data-pt="Apresentação" data-en="Presentation">Apresentação</span>
-    <h2 data-pt="Conheça o projeto." data-en="Meet the project.">Conheça o projeto.</h2>
-    
-    <div class="video-container youtube-container">
-      <iframe 
-        src="https://www.youtube-nocookie.com/embed/3sAuXIGruDI?rel=0&modestbranding=1&hd=1&vq=hd1080" 
-        title="FlammTek - Plasma Technology"
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
-      <div class="video-glow"></div>
-    </div>
-  </div>
-</section>
   <section class="section news-preview" id="noticias">
   <div class="section-inner">
     <span class="section-tag" data-pt="Notícias" data-en="News">Notícias</span>
@@ -1110,10 +1092,30 @@ document.addEventListener('DOMContentLoaded', () => {
       <span class="section-tag" data-pt="Contato" data-en="Contact">Contato</span>
       <h2 data-pt="Vamos conversar." data-en="Let's talk.">Vamos conversar.</h2>
       <p data-pt="Parceiros industriais, investidores, ou colaboradores de pesquisa — entre em contato." data-en="Industrial partners, investors, or research collaborators — get in touch.">Parceiros industriais, investidores, ou colaboradores de pesquisa — entre em contato.</p>
-      <a href="mailto:flammtek@gmail.com" class="contact-email">flammtek@gmail.com</a>
+      <a href="mailto:contato@flammtek.com" class="contact-email" data-email-pt="contato@flammtek.com" data-email-en="contact@flammtek.com">contato@flammtek.com</a>
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const contactLink = document.querySelector('.contact-email');
+  if (!contactLink) return;
+
+  function updateContactEmail() {
+    const lang = localStorage.getItem('lang') || 'pt';
+    const email = contactLink.getAttribute(`data-email-${lang}`);
+    if (email) {
+      contactLink.href = `mailto:${email}`;
+      contactLink.textContent = email;
+    }
+  }
+
+  document.addEventListener('langchange', updateContactEmail);
+  updateContactEmail();
+});
+</script>
+
 
 </div>
 

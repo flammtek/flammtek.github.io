@@ -24,7 +24,7 @@
   <meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.f2e38634e072be008601a0b7ba270b7543f44a4dafb2ad1ae91186da451d00f5.css" />
+  <link rel="stylesheet" href="/css/main.min.b4936ef34afeaafa21ba4c7d6aed479ad9cc4b4ed90416676efe434350bb35ef.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
@@ -289,6 +289,13 @@ document.addEventListener('DOMContentLoaded', () => {
       
         <main class="tech-page-content">
           <style>
+/* Header integration */
+.subpage-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f1f5f9;
+}
+
 .tech-page-content {
   background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(56, 189, 248, 0.06), transparent),
     radial-gradient(ellipse 60% 40% at 100% 20%, rgba(22, 163, 74, 0.04), transparent), #fff;
@@ -318,6 +325,37 @@ document.addEventListener('DOMContentLoaded', () => {
 .chart-highlight {
   color: #0369a1;
   font-weight: 600;
+}
+
+/* Dynamic Explore Section */
+.explore-other-dynamic {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid #f1f5f9;
+}
+.explore-container {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+.explore-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(10px);
+}
+.explore-slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .explore-container { height: 200px; }
 }
 </style>
 <div class="page-header">
@@ -349,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <p class="visual-caption" data-pt="No teste V-R3, a tecnologia <span class='chart-highlight'>sDBD 5s</span> atingiu picos superiores a <span class='chart-highlight'>13 g/mm</span>, partindo de apenas ~1 g/mm no material sem tratamento — uma melhoria de mais de 10x na ancoragem molecular." data-en="In the V-R3 test, <span class='chart-highlight'>sDBD 5s</span> technology reached peaks above <span class='chart-highlight'>13 g/mm</span>, starting from just ~1 g/mm in the untreated material — an improvement of over 10x in molecular anchoring.">No teste V-R3, a tecnologia <span class='chart-highlight'>sDBD 5s</span> atingiu picos superiores a <span class='chart-highlight'>13 g/mm</span>, partindo de apenas ~1 g/mm no material sem tratamento — uma melhoria de mais de 10x na ancoragem molecular.</p>
 <h2 data-pt="Evidência de Resistência" data-en="Strength Evidence">Evidência de Resistência</h2>
-<p data-pt="A força da união pós-plasma é tão intensa que, em muitos casos, o próprio substrato falha antes da camada colada se desprender, demonstrando a eficácia da modificação superficial." data-en="Post-plasma bond strength is so intense that, in many cases, the substrate itself fails before the bonded layer detaches, demonstrating the efficacy of the surface modification.">A força da união pós-plasma é tão intensa que, em muitos casos, o próprio substrato falha antes da camada colada se desprender, demonstrando a eficácia da modificação superficial.</p>
+<p data-pt="A força da união pós-plasma é tão intensa que, em muitos casos, o próprio substrato falha antes da camada colada se desprender, demonstrando a eficácia da modificação superficial." data-en="Post-plasma bond strength is so intense that, in many cases, the substrate itself fails before the bonded layer detaches, demonstrating the efficacy of the surface modification.">A força da união pós-plasma é tão intensa que, em many cases, the substrate itself fails before the bonded layer detaches, demonstrating the efficacy of the surface modification.</p>
 <div class="inline-visual">
   <img src="/images/plasma/tear.jpg" alt="Teste de delaminação física" />
 </div>
@@ -359,17 +397,78 @@ document.addEventListener('DOMContentLoaded', () => {
   <p data-pt="Podemos desenhar um teste focado em adesão, impressão, barreira e integração na sua linha." data-en="We can design a test focused on adhesion, printability, barrier performance, and integration into your line.">Podemos desenhar um teste focado em adesão, impressão, barreira e integração na sua linha.</p>
   <a href="https://calendly.com/flammtek" class="cta-button" data-pt="Fale Conosco →" data-en="Contact Us →">Fale Conosco →</a>
 </div>
-<div class="explore-other">
-  <h3 data-pt="Explore outra aplicação" data-en="Explore another application">Explore outra aplicação</h3>
-  <a href="/textile-fibers/" class="explore-card">
-    <span class="explore-num">03</span>
-    <div>
-      <h4 data-pt="Têxteis e Fibras" data-en="Textiles and Fibers">Têxteis e Fibras</h4>
-      <p data-pt="Tratamento a frio para absorção, molhabilidade e acabamentos mais limpos." data-en="Cold treatment for absorption, wettability, and cleaner finishing.">Tratamento a frio para absorção, molhabilidade e acabamentos mais limpos.</p>
-    </div>
-    <span class="explore-arrow">→</span>
-  </a>
+<div class="explore-other-dynamic">
+  <h3 data-pt="Explore nossas pesquisas" data-en="Explore our research">Explore nossas pesquisas</h3>
+  <div class="explore-container" id="explore-track">
+    <!-- Slide 1: Seeds -->
+    <a href="/seed-plasma/" class="explore-card explore-slide" data-id="seeds">
+      <span class="explore-num">01</span>
+      <div>
+        <h4 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h4>
+        <p data-pt="Aumente a germinação e o vigor sem agrotóxicos." data-en="Improve germination and vigor without pesticides.">Aumente a germinação e o vigor sem agrotóxicos.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 2: MDF -->
+    <a href="/mdf-plasma/" class="explore-card explore-slide" data-id="mdf">
+      <span class="explore-num">02</span>
+      <div>
+        <h4 data-pt="Reciclagem de MDF" data-en="MDF Recycling">Reciclagem de MDF</h4>
+        <p data-pt="Transforme resíduo tóxico em matéria-prima com plasma frio." data-en="Turn toxic waste into raw material with cold plasma.">Transforme resíduo tóxico em matéria-prima com plasma frio.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 3: Packaging -->
+    <a href="/packaging-polymers/" class="explore-card explore-slide" data-id="packaging">
+      <span class="explore-num">03</span>
+      <div>
+        <h4 data-pt="Embalagens e Polímeros" data-en="Packaging and Polymers">Embalagens e Polímeros</h4>
+        <p data-pt="Ativação superficial para adesão, impressão e barreiras funcionais." data-en="Surface activation for adhesion, printability, and functional barriers.">Ativação superficial para adesão, impressão e barreiras funcionais.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 4: Decontamination -->
+    <a href="/decontamination/" class="explore-card explore-slide" data-id="decontamination">
+      <span class="explore-num">04</span>
+      <div>
+        <h4 data-pt="Descontaminação" data-en="Decontamination">Descontaminação</h4>
+        <p data-pt="Sanitização de superfícies e alimentos com PAW e DCSBD." data-en="Surface and food sanitization using PAW and DCSBD.">Sanitização de superfícies e alimentos com PAW e DCSBD.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 5: Textile -->
+    <a href="/textile-fibers/" class="explore-card explore-slide" data-id="textile">
+      <span class="explore-num">05</span>
+      <div>
+        <h4 data-pt="Têxteis e Fibras" data-en="Textiles and Fibers">Têxteis e Fibras</h4>
+        <p data-pt="Molhabilidade, absorção e acabamento com menos agressão de processo." data-en="Wettability, absorption, and finishing with less process aggression.">Molhabilidade, absorção e acabamento with less process aggression.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+  </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('explore-track');
+  if (!container) return;
+  const slides = Array.from(container.querySelectorAll('.explore-slide'));
+  const currentPath = window.location.pathname;
+  const validSlides = slides.filter(slide => !currentPath.includes(slide.getAttribute('href')));
+  let currentIdx = 0;
+  function showSlide(idx) {
+    slides.forEach(s => s.classList.remove('active'));
+    validSlides[idx].classList.add('active');
+  }
+  function nextSlide() {
+    currentIdx = (currentIdx + 1) % validSlides.length;
+    showSlide(currentIdx);
+  }
+  if (validSlides.length > 0) {
+    showSlide(0);
+    setInterval(nextSlide, 5000);
+  }
+});
+</script>
 </div>
 
         </main>

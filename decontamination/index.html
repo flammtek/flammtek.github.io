@@ -24,7 +24,7 @@
   <meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.f2e38634e072be008601a0b7ba270b7543f44a4dafb2ad1ae91186da451d00f5.css" />
+  <link rel="stylesheet" href="/css/main.min.b4936ef34afeaafa21ba4c7d6aed479ad9cc4b4ed90416676efe434350bb35ef.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
@@ -289,13 +289,21 @@ document.addEventListener('DOMContentLoaded', () => {
       
         <main class="tech-page-content">
           <style>
+/* Header integration */
+.subpage-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f1f5f9;
+}
+
 .tech-page-content {
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(239, 68, 68, 0.06), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(217, 119, 6, 0.04), transparent), #fff;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(20, 184, 166, 0.06), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(22, 163, 74, 0.04), transparent), #fff;
   min-height: 100vh;
 }
 .inline-visual {
   width: 100%;
+  max-width: 600px;
   margin: 2.5rem 0;
   border-radius: 24px;
   overflow: hidden;
@@ -304,6 +312,37 @@ document.addEventListener('DOMContentLoaded', () => {
 .inline-visual img {
   width: 100%;
   display: block;
+}
+
+/* Dynamic Explore Section */
+.explore-other-dynamic {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid #f1f5f9;
+}
+.explore-container {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+}
+.explore-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(10px);
+}
+.explore-slide.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .explore-container { height: 200px; }
 }
 </style>
 <div class="page-header">
@@ -332,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 <h2 data-pt="Aplicações Industriais" data-en="Industrial Applications">Aplicações Industriais</h2>
-<p data-pt="A tecnologia pode ser integrada em diferentes etapas da cadeia produtiva, garantindo maior segurança e sustentabilidade no processo de higienização." data-en="The technology can be integrated into different stages of the production chain, ensuring greater safety and sustainability in the cleaning process.">A tecnologia pode ser integrada em diferentes etapas da cadeia produtiva, garantindo maior segurança e sustentabilidade no processo de higienização.</p>
+<p data-pt="A tecnologia pode ser integrada em diferentes etapas da cadeia produtiva, garantindo maior segurança e sustentabilidade no processo de higienização." data-en="The technology can be integrated into different stages of the production chain, ensuring greater safety and sustainability in the cleaning process.">A tecnologia pode ser integrada em different stages of the production chain, ensuring greater safety and sustainability in the cleaning process.</p>
 <div class="inline-visual">
   <img src="/images/plasma/agua_ativada_desconmt2.png" alt="Processo de Descontaminação" loading="lazy" />
 </div>
@@ -343,29 +382,90 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
   <div class="feature-card">
     <h4 data-pt="Superfícies de Contato" data-en="Contact Surfaces">Superfícies de Contato</h4>
-    <p data-pt="Descontaminação de esteiras, embalagens e utensílios em linhas de produção." data-en="Decontamination of belts, packaging, and utensils in production lines.">Descontaminação de esteiras, embalagens e utensílios em linhas de produção.</p>
+    <p data-pt="Descontaminação de esteiras, embalagens e utensílios em linhas de produção." data-en="Decontamination of belts, packaging, and utensils in production lines.">Decontamination of belts, packaging, and utensils in production lines.</p>
   </div>
   <div class="feature-card">
     <h4 data-pt="Redução Química" data-en="Chemical Reduction">Redução Química</h4>
-    <p data-pt="Substituição ou complementação ao uso de cloro e outros agentes sanitizantes tradicionais." data-en="Substitution or supplementation of chlorine and other traditional sanitizing agents.">Substituição ou complementação ao uso de cloro e outros agentes sanitizantes tradicionais.</p>
+    <p data-pt="Substituição ou complementação ao uso de cloro e outros agentes sanitizantes tradicionais." data-en="Substitution or supplementation of chlorine and other traditional sanitizing agents.">Substitution or supplementation of chlorine and other traditional sanitizing agents.</p>
   </div>
 </div>
 <div class="cta-section">
   <h3 data-pt="Precisa de uma solução de sanitização?" data-en="Need a sanitization solution?">Precisa de uma solução de sanitização?</h3>
-  <p data-pt="Podemos validar a eficácia do plasma frio para o seu desafio específico de descontaminação." data-en="We can validate the efficacy of cold plasma for your specific decontamination challenge.">Podemos validar a eficácia do plasma frio para o seu desafio específico de descontaminação.</p>
+  <p data-pt="Podemos validar a eficácia do plasma frio para o seu desafio específico de descontaminação." data-en="We can validate the efficacy of cold plasma for your specific decontamination challenge.">Podemos validar a eficácia do plasma frio for your specific decontamination challenge.</p>
   <a href="https://calendly.com/flammtek" class="cta-button" data-pt="Solicitar Estudo →" data-en="Request Study →">Solicitar Estudo →</a>
 </div>
-<div class="explore-other">
-  <h3 data-pt="Explore outra aplicação" data-en="Explore another application">Explore outra aplicação</h3>
-  <a href="/seed-plasma/" class="explore-card">
-    <span class="explore-num">01</span>
-    <div>
-      <h4 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h4>
-      <p data-pt="Aumente a germinação e o vigor sem agrotóxicos." data-en="Improve germination and vigor without pesticides.">Aumente a germinação e o vigor sem agrotóxicos.</p>
-    </div>
-    <span class="explore-arrow">→</span>
-  </a>
+<div class="explore-other-dynamic">
+  <h3 data-pt="Explore nossas pesquisas" data-en="Explore our research">Explore nossas pesquisas</h3>
+  <div class="explore-container" id="explore-track">
+    <!-- Slide 1: Seeds -->
+    <a href="/seed-plasma/" class="explore-card explore-slide" data-id="seeds">
+      <span class="explore-num">01</span>
+      <div>
+        <h4 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h4>
+        <p data-pt="Aumente a germinação e o vigor sem agrotóxicos." data-en="Improve germination and vigor without pesticides.">Aumente a germinação e o vigor sem agrotóxicos.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 2: MDF -->
+    <a href="/mdf-plasma/" class="explore-card explore-slide" data-id="mdf">
+      <span class="explore-num">02</span>
+      <div>
+        <h4 data-pt="Reciclagem de MDF" data-en="MDF Recycling">Reciclagem de MDF</h4>
+        <p data-pt="Transforme resíduo tóxico em matéria-prima com plasma frio." data-en="Turn toxic waste into raw material with cold plasma.">Turn toxic waste into raw material with cold plasma.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 3: Packaging -->
+    <a href="/packaging-polymers/" class="explore-card explore-slide" data-id="packaging">
+      <span class="explore-num">03</span>
+      <div>
+        <h4 data-pt="Embalagens e Polímeros" data-en="Packaging and Polymers">Embalagens e Polímeros</h4>
+        <p data-pt="Ativação superficial para adesão, impressão e barreiras funcionais." data-en="Surface activation for adhesion, printability, and functional barriers.">Ativação superficial para adesão, impressão e barreiras funcionais.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 4: Decontamination -->
+    <a href="/decontamination/" class="explore-card explore-slide" data-id="decontamination">
+      <span class="explore-num">04</span>
+      <div>
+        <h4 data-pt="Descontaminação" data-en="Decontamination">Descontaminação</h4>
+        <p data-pt="Sanitização de superfícies e alimentos com PAW e DCSBD." data-en="Surface and food sanitization using PAW and DCSBD.">Sanitização de superfícies e alimentos com PAW e DCSBD.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+    <!-- Slide 5: Textile -->
+    <a href="/textile-fibers/" class="explore-card explore-slide" data-id="textile">
+      <span class="explore-num">05</span>
+      <div>
+        <h4 data-pt="Têxteis e Fibras" data-en="Textiles and Fibers">Têxteis e Fibras</h4>
+        <p data-pt="Molhabilidade, absorção e acabamento com menos agressão de processo." data-en="Wettability, absorption, and finishing with less process aggression.">Molhabilidade, absorção e acabamento with less process aggression.</p>
+      </div>
+      <span class="explore-arrow">→</span>
+    </a>
+  </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('explore-track');
+  if (!container) return;
+  const slides = Array.from(container.querySelectorAll('.explore-slide'));
+  const currentPath = window.location.pathname;
+  const validSlides = slides.filter(slide => !currentPath.includes(slide.getAttribute('href')));
+  let currentIdx = 0;
+  function showSlide(idx) {
+    slides.forEach(s => s.classList.remove('active'));
+    validSlides[idx].classList.add('active');
+  }
+  function nextSlide() {
+    currentIdx = (currentIdx + 1) % validSlides.length;
+    showSlide(currentIdx);
+  }
+  if (validSlides.length > 0) {
+    showSlide(0);
+    setInterval(nextSlide, 5000);
+  }
+});
+</script>
 </div>
 
         </main>
