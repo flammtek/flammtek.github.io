@@ -3,18 +3,18 @@
   <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tratamento de Resíduos de MDF por Plasma - FlammTek</title>
-  <link rel="canonical" href="https://flammtek.github.io/mdf-plasma/" />
+  <title>Descontaminação Superficial por Plasma - FlammTek</title>
+  <link rel="canonical" href="https://flammtek.github.io/decontamination/" />
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg?v=2" />
-  <meta name="description" content="Pesquisa em degradação de resina ureia-formaldeído baseada em plasma para reciclagem de MDF" />
+  <meta name="description" content="Inativação de patógenos em superfícies e alimentos usando PAW e tecnologia DCSBD" />
   
   
     <meta name="robots" content="index, follow" />
   
-  <meta property="og:title" content="Tratamento de Resíduos de MDF por Plasma" />
-<meta property="og:description" content="Pesquisa em degradação de resina ureia-formaldeído baseada em plasma para reciclagem de MDF" />
+  <meta property="og:title" content="Descontaminação Superficial por Plasma" />
+<meta property="og:description" content="Inativação de patógenos em superfícies e alimentos usando PAW e tecnologia DCSBD" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://flammtek.github.io/mdf-plasma/" />
+<meta property="og:url" content="https://flammtek.github.io/decontamination/" />
 
 <meta property="og:image" content="https://flammtek.github.io/images/logo-share.webp" />
 <meta property="og:image:type" content="image/webp" />
@@ -290,14 +290,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <main class="tech-page-content">
           <style>
 .tech-page-content {
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(245, 158, 11, 0.06), transparent),
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(239, 68, 68, 0.06), transparent),
     radial-gradient(ellipse 60% 40% at 100% 20%, rgba(217, 119, 6, 0.04), transparent), #fff;
   min-height: 100vh;
 }
 .inline-visual {
   width: 100%;
-  max-width: 650px;
-  margin: 3rem auto;
+  margin: 2.5rem 0;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0,0,0,0.1);
@@ -306,273 +305,63 @@ document.addEventListener('DOMContentLoaded', () => {
   width: 100%;
   display: block;
 }
-
-/* Specs Grid - Forced Single Row */
-.specs-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  margin: 4rem 0;
-  width: 100%;
-}
-.spec-item {
-  padding: 2rem 0.5rem;
-  background: #f8fafc;
-  border-radius: 20px;
-  border: 1px solid #e2e8f0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 0;
-  transition: all 0.3s ease;
-}
-.spec-value {
-  display: block;
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: #b45309; /* Reverted to amber */
-  margin-bottom: 0.4rem;
-  font-family: "Barlow Condensed", sans-serif;
-  line-height: 1;
-}
-.spec-label {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  line-height: 1.3;
-}
-
-@media (max-width: 1024px) {
-  .spec-value { font-size: 1.4rem; }
-  .spec-label { font-size: 0.75rem; }
-}
-
-@media (max-width: 768px) {
-  .specs-container { gap: 4px; margin: 2rem 0; }
-  .spec-item { padding: 0.8rem 0.1rem; border-radius: 8px; }
-  .spec-value { font-size: 0.95rem !important; }
-  .spec-label { font-size: 0.6rem !important; letter-spacing: 0; }
-}
-.spec-item:hover {
-  border-color: #f59e0b; /* Reverted to amber */
-  transform: translateY(-4px);
-}
-
-/* Data Table Styling */
-.data-table-container {
-  overflow-x: hidden;
-  margin: 3.5rem 0;
-  border-radius: 20px;
-  background: white;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.07);
-  border: 1px solid #e2e8f0;
-}
-.data-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.05rem;
-  table-layout: fixed;
-}
-.data-table th, .data-table td {
-  padding: 1.4rem 0.5rem;
-  border-bottom: 1px solid #f1f5f9;
-  line-height: 1.4;
-}
-.data-table th {
-  background: #f8fafc;
-  font-weight: 800;
-  color: #475569;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.2rem;
-}
-.data-table .row-label {
-  text-align: left;
-  font-weight: 700;
-  color: #1e293b;
-  background: #f8fafc;
-  width: 25%;
-  padding-left: 1.5rem;
-}
-.data-table .highlight-col {
-  background: rgba(245, 158, 11, 0.04); /* Amber tint */
-  color: #b45309; /* Amber color */
-  font-weight: 800;
-}
-.data-table .bad-val { color: #ef4444; }
-.data-table .good-val { color: #16a34a; }
-.plasma-header { color: #b45309 !important; font-size: 1.3rem !important; }
-
-@media (max-width: 768px) {
-  .data-table { font-size: 0.72rem; }
-  .data-table th, .data-table td { padding: 0.7rem 0.2rem; }
-  .data-table .row-label { padding-left: 0.5rem; }
-}
-
-/* Sales Table Styling - Condensed Y-Axis */
-.benefits-table-container {
-  margin: 3rem 0;
-  border-radius: 20px;
-  background: white;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.06);
-  border: 1px solid rgba(245, 158, 11, 0.15); /* Reverted to amber */
-}
-.benefits-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-.benefits-table th {
-  background: rgba(245, 158, 11, 0.05); /* Reverted to amber */
-  padding: 0.8rem 1.8rem;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.4rem;
-  color: #b45309; /* Reverted to amber */
-}
-.benefits-table td {
-  padding: 0.8rem 1.8rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-.benefit-title {
-  font-weight: 800;
-  color: #1e293b;
-  display: block;
-  font-size: 1.15rem;
-  margin-bottom: 0.1rem;
-}
-.benefit-desc {
-  font-size: 1.05rem;
-  color: #64748b;
-  line-height: 1.4;
-}
-
-@media (max-width: 768px) {
-  .benefits-table th { padding: 0.5rem 1rem; font-size: 1.1rem; }
-  .benefits-table td { padding: 0.5rem 1rem; }
-  .benefit-title { font-size: 0.95rem; }
-  .benefit-desc { font-size: 0.88rem; }
-}
 </style>
 <div class="page-header">
   <a href="/" class="back-link" data-pt="← Voltar ao início" data-en="← Back to home">← Voltar ao início</a>
-  <h1 data-pt="Reciclagem de MDF por Plasma" data-en="MDF Plasma Recycling">Reciclagem de MDF por Plasma</h1>
-  <p class="subtitle" data-pt="Degradação de resina ureia-formaldeído usando plasma frio para recuperação de fibras de madeira" data-en="Urea-formaldehyde resin degradation using cold plasma for wood fiber recovery">Degradação de resina ureia-formaldeído usando plasma frio para recuperação de fibras de madeira</p>
+  <h1 data-pt="Descontaminação Superficial por Plasma" data-en="Plasma Surface Decontamination">Descontaminação Superficial por Plasma</h1>
+  <p class="subtitle" data-pt="Tecnologia limpa para inativação de patógenos em alimentos e superfícies industriais" data-en="Clean technology for pathogen inactivation in food and industrial surfaces">Tecnologia limpa para inativação de patógenos em alimentos e superfícies industriais</p>
 </div>
 <div class="content-section">
+<h2 data-pt="Sanitização com Resíduo Zero" data-en="Zero-Residue Sanitization">Sanitização com Resíduo Zero</h2>
+<p data-pt="A descontaminação por plasma frio oferece uma alternativa poderosa aos métodos químicos tradicionais. Ao utilizar espécies reativas de oxigênio e nitrogênio, conseguimos inativar microrganismos, fungos e bactérias sem deixar resíduos tóxicos no produto final." data-en="Cold plasma decontamination offers a powerful alternative to traditional chemical methods. By utilizing reactive oxygen and nitrogen species, we can inactivate microorganisms, fungi, and bacteria without leaving toxic residues in the final product.">A descontaminação por plasma frio oferece uma alternativa poderosa aos métodos químicos tradicionais. Ao utilizar espécies reativas de oxigênio e nitrogênio, conseguimos inativar microrganismos, fungos e bactérias sem deixar resíduos tóxicos no produto final.</p>
 <div class="inline-visual">
-  <img src="/images/plasma/MDF2.webp" alt="Fibras recuperadas com tecnologia FlammTek" loading="lazy" />
+  <img src="/images/plasma/agua_ativada_descont.png" alt="Água Ativada por Plasma" loading="lazy" />
 </div>
-<h2 data-pt="Parâmetros de Operação" data-en="Operation Parameters">Parâmetros de Operação</h2>
-<div class="specs-container">
-  <div class="spec-item">
-    <span class="spec-value">100g/L</span>
-    <span class="spec-label" data-pt="Proporção (10% m/v)" data-en="Prop. (10% w/v)">Proporção (10% m/v)</span>
+<div class="feature-grid">
+  <div class="feature-card">
+    <h4 data-pt="Tecnologia PAW" data-en="PAW Technology">Tecnologia PAW</h4>
+    <p data-pt="Água Ativada por Plasma (Plasma Activated Water) atua como um desinfetante potente e ecológico." data-en="Plasma Activated Water (PAW) acts as a powerful and eco-friendly disinfectant.">Água Ativada por Plasma (Plasma Activated Water) atua como um desinfetante potente e ecológico.</p>
   </div>
-  <div class="spec-item">
-    <span class="spec-value">30-60m</span>
-    <span class="spec-label" data-pt="Plasma (300W)" data-en="Plasma (300W)">Plasma (300W)</span>
+  <div class="feature-card">
+    <h4 data-pt="Sistema DCSBD" data-en="DCSBD System">Sistema DCSBD</h4>
+    <p data-pt="Descarga de barreira dielétrica superficial para tratamento direto e uniforme de superfícies sólidas." data-en="Diffuse Coplanar Surface Dielectric Barrier Discharge for direct and uniform solid surface treatment.">Descarga de barreira dielétrica superficial para tratamento direto e uniforme de superfícies sólidas.</p>
   </div>
-  <div class="spec-item">
-    <span class="spec-value">>80%</span>
-    <span class="spec-label" data-pt="Resina" data-en="Resin">Resina</span>
-  </div>
-  <div class="spec-item">
-    <span class="spec-value">3.0kWh</span>
-    <span class="spec-label" data-pt="Energia/kg" data-en="Energy/kg">Energia/kg</span>
-  </div>
-  <div class="spec-item">
-    <span class="spec-value">2.0L/kg</span>
-    <span class="spec-label" data-pt="Água (5 reusos)" data-en="Water (5 reuses)">Água (5 reusos)</span>
+  <div class="feature-card">
+    <h4 data-pt="Segurança Alimentar" data-en="Food Safety">Segurança Alimentar</h4>
+    <p data-pt="Aumenta o tempo de prateleira (shelf-life) e garante a segurança microbiológica de frutas e vegetais." data-en="Increases shelf-life and ensures microbiological safety of fruits and vegetables.">Aumenta o tempo de prateleira (shelf-life) e garante a segurança microbiológica de frutas e vegetais.</p>
   </div>
 </div>
-<h2 data-pt="Nossa Solução Circular" data-en="Our Circular Solution">Nossa Solução Circular</h2>
-<p data-pt="Utilizamos plasma frio para quebrar as ligações químicas da resina, permitindo a separação total dos componentes para reinserção na cadeia produtiva." data-en="We use cold plasma to break the resin's chemical bonds, allowing total separation of components for reinsertion into the production chain.">Utilizamos plasma frio para quebrar as ligações químicas da resina, permitindo a separação total dos componentes para reinserção na cadeia produtiva.</p>
+<h2 data-pt="Aplicações Industriais" data-en="Industrial Applications">Aplicações Industriais</h2>
+<p data-pt="A tecnologia pode ser integrada em diferentes etapas da cadeia produtiva, garantindo maior segurança e sustentabilidade no processo de higienização." data-en="The technology can be integrated into different stages of the production chain, ensuring greater safety and sustainability in the cleaning process.">A tecnologia pode ser integrada em diferentes etapas da cadeia produtiva, garantindo maior segurança e sustentabilidade no processo de higienização.</p>
 <div class="inline-visual">
-  <img src="/images/plasma/derivatives_mdf.png" alt="Derivados da reciclagem de MDF" loading="lazy" />
+  <img src="/images/plasma/agua_ativada_desconmt2.png" alt="Processo de Descontaminação" loading="lazy" />
 </div>
-<h2 data-pt="Por que escolher o Plasma?" data-en="Why choose Plasma?">Por que escolher o Plasma?</h2>
-<div class="benefits-table-container">
-  <table class="benefits-table">
-    <thead>
-      <tr>
-        <th data-pt="Pilar do Processo" data-en="Process Pillar">Pilar do Processo</th>
-        <th data-pt="Vantagem FlammTek" data-en="FlammTek Advantage">Vantagem FlammTek</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="benefit-title" data-pt="Quebra da resina UF" data-en="UF Resin Breakdown">Quebra da resina UF</span></td>
-        <td class="benefit-desc" data-pt="A química do plasma degrada a parte problemática dos resíduos, tornando a reciclagem possível." data-en="Plasma chemistry degrades the most problematic part of the waste, making recycling possible.">A química do plasma degrada a parte problemática dos resíduos, tornando a reciclagem possível.</td>
-      </tr>
-      <tr>
-        <td><span class="benefit-title" data-pt="Neutralização do formol" data-en="Formaldehyde Neutralization">Neutralização do formol</span></td>
-        <td class="benefit-desc" data-pt="O processo elimina o formol antes da emissão, garantindo uma operação segura e limpa." data-en="The process eliminates formaldehyde before emission, ensuring a safe and clean operation.">O processo elimina o formol antes da emissão, garantindo uma operação segura e limpa.</td>
-      </tr>
-      <tr>
-        <td><span class="benefit-title" data-pt="Recuperação Total" data-en="Total Recovery">Recuperação Total</span></td>
-        <td class="benefit-desc" data-pt="Fibras intactas para novos painéis e subprodutos líquidos transformados em fertilizantes." data-en="Intact fibers for new panels and liquid byproducts turned into fertilizers.">Fibras intactas para novos painéis e subprodutos líquidos transformados em fertilizantes.</td>
-      </tr>
-      <tr>
-        <td><span class="benefit-title" data-pt="Tecnologia Verde" data-en="Green Technology">Tecnologia Verde</span></td>
-        <td class="benefit-desc" data-pt="Zero aditivos químicos. Apenas água e eletricidade para um baixo custo operacional." data-en="Zero chemical additives. Just water and electricity for low operational costs.">Zero aditivos químicos. Apenas água e eletricidade para um baixo custo operacional.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<h2 data-pt="Comparativo de Performance" data-en="Performance Comparison">Comparativo de Performance</h2>
-<div class="data-table-container">
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th class="row-label"></th>
-        <th class="plasma-header" data-pt="Plasma Frio" data-en="Cold Plasma">Plasma Frio</th>
-        <th data-pt="Ác. oxálico 1%" data-en="Oxalic Acid 1%">Ác. oxálico 1%</th>
-        <th data-pt="Vapor superaq." data-en="Superheated Steam">Vapor superaq.</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="row-label" data-pt="Remoção da resina (%)" data-en="Resin Removal (%)">Remoção da resina (%)</td>
-        <td class="highlight-col">81,8</td>
-        <td class="good-val">96,1</td>
-        <td>65,0</td>
-      </tr>
-      <tr>
-        <td class="row-label" data-pt="Formaldeído (ng/g)" data-en="Formaldehyde (ng/g)">Formaldeído (ng/g)</td>
-        <td class="highlight-col good-val">0,641</td>
-        <td class="bad-val">61,9</td>
-        <td class="bad-val">50.500,00</td>
-      </tr>
-      <tr>
-        <td class="row-label" data-pt="Gasto energético" data-en="Energy Consumption">Gasto energético</td>
-        <td class="highlight-col" data-pt="Operação plasma" data-en="Plasma Operation">Operação plasma</td>
-        <td data-pt="Aquecimento até 80 ºC" data-en="Heating up to 80 ºC">Aquecimento até 80 ºC</td>
-        <td data-pt="Vapor a 130 ºC" data-en="Steam at 130 ºC">Vapor a 130 ºC</td>
-      </tr>
-      <tr>
-        <td class="row-label" data-pt="Subprodutos" data-en="Byproducts">Subprodutos</td>
-        <td class="highlight-col" data-pt="Fase líquida limpa" data-en="Clean liquid phase">Fase líquida limpa</td>
-        <td data-pt="Misturados ao ácido" data-en="Mixed with acid">Misturados ao ácido</td>
-        <td data-pt="Misturados às fibras" data-en="Mixed with fibers">Misturados às fibras</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="feature-grid">
+  <div class="feature-card">
+    <h4 data-pt="Pós-Colheita" data-en="Post-Harvest">Pós-Colheita</h4>
+    <p data-pt="Lavagem e tratamento de sementes e grãos para redução de fungos e micotoxinas." data-en="Washing and treatment of seeds and grains to reduce fungi and mycotoxins.">Lavagem e tratamento de sementes e grãos para redução de fungos e micotoxinas.</p>
+  </div>
+  <div class="feature-card">
+    <h4 data-pt="Superfícies de Contato" data-en="Contact Surfaces">Superfícies de Contato</h4>
+    <p data-pt="Descontaminação de esteiras, embalagens e utensílios em linhas de produção." data-en="Decontamination of belts, packaging, and utensils in production lines.">Descontaminação de esteiras, embalagens e utensílios em linhas de produção.</p>
+  </div>
+  <div class="feature-card">
+    <h4 data-pt="Redução Química" data-en="Chemical Reduction">Redução Química</h4>
+    <p data-pt="Substituição ou complementação ao uso de cloro e outros agentes sanitizantes tradicionais." data-en="Substitution or supplementation of chlorine and other traditional sanitizing agents.">Substituição ou complementação ao uso de cloro e outros agentes sanitizantes tradicionais.</p>
+  </div>
 </div>
 <div class="cta-section">
-  <h3 data-pt="Vamos implementar a circularidade?" data-en="Let's implement circularity?">Vamos implementar a circularidade?</h3>
-  <p data-pt="Podemos desenhar um estudo focado no reaproveitamento dos seus resíduos de MDF." data-en="We can design a study focused on reusing your MDF waste.">Podemos desenhar um estudo focado no reaproveitamento dos seus resíduos de MDF.</p>
-  <a href="https://calendly.com/flammtek" class="cta-button" data-pt="Agendar conversa →" data-en="Schedule a call →">Agendar conversa →</a>
+  <h3 data-pt="Precisa de uma solução de sanitização?" data-en="Need a sanitization solution?">Precisa de uma solução de sanitização?</h3>
+  <p data-pt="Podemos validar a eficácia do plasma frio para o seu desafio específico de descontaminação." data-en="We can validate the efficacy of cold plasma for your specific decontamination challenge.">Podemos validar a eficácia do plasma frio para o seu desafio específico de descontaminação.</p>
+  <a href="https://calendly.com/flammtek" class="cta-button" data-pt="Solicitar Estudo →" data-en="Request Study →">Solicitar Estudo →</a>
 </div>
 <div class="explore-other">
-  <h3 data-pt="Explore outra pesquisa" data-en="Explore other research">Explore outra pesquisa</h3>
+  <h3 data-pt="Explore outra aplicação" data-en="Explore another application">Explore outra aplicação</h3>
   <a href="/seed-plasma/" class="explore-card">
     <span class="explore-num">01</span>
     <div>
       <h4 data-pt="Tratamento de Sementes" data-en="Seed Treatment">Tratamento de Sementes</h4>
-      <p data-pt="Melhore a germinação sem agrotóxicos usando plasma frio." data-en="Improve germination without pesticides using cold plasma.">Melhore a germinação sem agrotóxicos usando plasma frio.</p>
+      <p data-pt="Aumente a germinação e o vigor sem agrotóxicos." data-en="Improve germination and vigor without pesticides.">Aumente a germinação e o vigor sem agrotóxicos.</p>
     </div>
     <span class="explore-arrow">→</span>
   </a>

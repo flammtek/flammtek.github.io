@@ -24,7 +24,7 @@
   <meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.16acb3bc7ea09978b15d169d0c6f7de4115371a495175a35c3d25cf58d7e133c.css" />
+  <link rel="stylesheet" href="/css/main.min.f2e38634e072be008601a0b7ba270b7543f44a4dafb2ad1ae91186da451d00f5.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
@@ -294,77 +294,132 @@ document.addEventListener('DOMContentLoaded', () => {
     radial-gradient(ellipse 60% 40% at 100% 20%, rgba(217, 119, 6, 0.04), transparent), #fff;
   min-height: 100vh;
 }
+.inline-visual {
+  width: 100%;
+  max-width: 650px;
+  margin: 3rem auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+.inline-visual img {
+  width: 100%;
+  display: block;
+}
+.visual-small {
+  max-width: 480px !important; /* Smaller size for the process figure */
+}
+.visual-caption {
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #475569;
+  max-width: 700px;
+  margin: -1.5rem auto 3rem;
+  padding: 0 1rem;
+  font-style: italic;
+}
+
+/* Sales Table Styling - Condensed Y-Axis */
+.benefits-table-container {
+  margin: 3rem 0;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+  border: 1px solid rgba(22, 163, 74, 0.15);
+}
+.benefits-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.benefits-table th {
+  background: rgba(22, 163, 74, 0.04);
+  padding: 0.8rem 1.8rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #15803d;
+}
+.benefits-table td {
+  padding: 0.8rem 1.8rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.benefit-title {
+  font-weight: 800;
+  color: #1e293b;
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 0.1rem;
+}
+.benefit-desc {
+  font-size: 1.05rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .benefits-table th { padding: 0.5rem 1rem; font-size: 1.1rem; }
+  .benefits-table td { padding: 0.5rem 1rem; }
+  .benefit-title { font-size: 0.95rem; }
+  .benefit-desc { font-size: 0.88rem; }
+  .visual-small { max-width: 320px !important; }
+}
 </style>
 <div class="page-header">
   <a href="/" class="back-link" data-pt="← Voltar ao início" data-en="← Back to home">← Voltar ao início</a>
   <h1 data-pt="Tratamento de Sementes por Plasma" data-en="Plasma Seed Treatment">Tratamento de Sementes por Plasma</h1>
   <p class="subtitle" data-pt="Modificação de superfície de sementes usando tecnologia de plasma atmosférico frio" data-en="Seed surface modification using cold atmospheric plasma technology">Modificação de superfície de sementes usando tecnologia de plasma atmosférico frio</p>
 </div>
-<div class="plasma-visual">
-  <img src="/images/plasma/GifPlasma.gif" alt="Plasma em ação" loading="lazy" />
-</div>
 <div class="content-section">
-<h2 data-pt="Contexto da Pesquisa" data-en="Research Context">Contexto da Pesquisa</h2>
-<p data-pt="O tratamento por plasma atmosférico frio (PAF) representa uma abordagem emergente na pesquisa agrícola. Esta tecnologia utiliza gás ionizado em temperatura próxima à ambiente para modificar propriedades de superfície de sementes sem dano térmico ou aditivos químicos." data-en="Cold atmospheric plasma (CAP) treatment represents an emerging approach in agricultural research. This technology uses ionized gas at near-room temperature to modify seed surface properties without thermal damage or chemical additives.">O tratamento por plasma atmosférico frio (PAF) representa uma abordagem emergente na pesquisa agrícola. Esta tecnologia utiliza gás ionizado em temperatura próxima à ambiente para modificar propriedades de superfície de sementes sem dano térmico ou aditivos químicos.</p>
-<p data-pt="Nossa pesquisa explora como as espécies reativas geradas pelo plasma interagem com superfícies de revestimento de sementes para potencialmente melhorar características de germinação." data-en="Our research explores how plasma-generated reactive species interact with seed coating surfaces to potentially improve germination characteristics.">Nossa pesquisa explora como as espécies reativas geradas pelo plasma interagem com superfícies de revestimento de sementes para potencialmente melhorar características de germinação.</p>
-<h2 data-pt="Mecanismo de Ação" data-en="Mechanism of Action">Mecanismo de Ação</h2>
-<p data-pt="Quando sementes são expostas ao plasma frio, vários processos físicos e químicos ocorrem na superfície:" data-en="When seeds are exposed to cold plasma, several physical and chemical processes occur at the surface:">Quando sementes são expostas ao plasma frio, vários processos físicos e químicos ocorrem na superfície:</p>
-<div class="feature-grid">
-  <div class="feature-card">
-    <h4 data-pt="Oxidação de Superfície" data-en="Surface Oxidation">Oxidação de Superfície</h4>
-    <p data-pt="Espécies reativas de oxigênio (ERO) introduzem grupos funcionais que aumentam a hidrofilicidade da superfície." data-en="Reactive oxygen species (ROS) introduce functional groups that increase surface hydrophilicity.">Espécies reativas de oxigênio (ERO) introduzem grupos funcionais que aumentam a hidrofilicidade da superfície.</p>
-  </div>
-  <div class="feature-card">
-    <h4 data-pt="Ataque de Superfície" data-en="Surface Etching">Ataque de Superfície</h4>
-    <p data-pt="Espécies de plasma causam modificação microscópica da estrutura do revestimento da semente." data-en="Plasma species cause microscopic modification of the seed coating structure.">Espécies de plasma causam modificação microscópica da estrutura do revestimento da semente.</p>
-  </div>
-  <div class="feature-card">
-    <h4 data-pt="Energia de Superfície" data-en="Surface Energy">Energia de Superfície</h4>
-    <p data-pt="Alterações na química afetam o ângulo de contato da água e características de absorção." data-en="Changes in chemistry affect water contact angle and absorption characteristics.">Alterações na química afetam o ângulo de contato da água e características de absorção.</p>
-  </div>
+<div class="inline-visual">
+  <img src="/images/plasma/seeds.jpg" alt="Sementes padrão vs Tratamento FlammTek 5s" loading="lazy" />
 </div>
-<h2 data-pt="Áreas de Pesquisa" data-en="Research Areas">Áreas de Pesquisa</h2>
-<div class="feature-grid">
-  <div class="feature-card">
-    <h4 data-pt="Caracterização de Superfície" data-en="Surface Characterization">Caracterização de Superfície</h4>
-    <p data-pt="Medição de ângulo de contato da água, MEV e análise espectroscópica de superfícies tratadas." data-en="Water contact angle measurement, SEM and spectroscopic analysis of treated surfaces.">Medição de ângulo de contato da água, MEV e análise espectroscópica de superfícies tratadas.</p>
-  </div>
-  <div class="feature-card">
-    <h4 data-pt="Estudos de Germinação" data-en="Germination Studies">Estudos de Germinação</h4>
-    <p data-pt="Experimentos controlados comparando amostras de sementes tratadas e não tratadas." data-en="Controlled experiments comparing treated and untreated seed samples.">Experimentos controlados comparando amostras de sementes tratadas e não tratadas.</p>
-  </div>
-  <div class="feature-card">
-    <h4 data-pt="Parâmetros de Processo" data-en="Process Parameters">Parâmetros de Processo</h4>
-    <p data-pt="Otimização do tempo de exposição, potência do plasma e composição do gás." data-en="Optimization of exposure time, plasma power and gas composition.">Otimização do tempo de exposição, potência do plasma e composição do gás.</p>
-  </div>
-  <div class="feature-card">
-    <h4 data-pt="Persistência do Tratamento" data-en="Treatment Persistence">Persistência do Tratamento</h4>
-    <p data-pt="Estudos sobre longevidade das modificações induzidas por plasma." data-en="Studies on the longevity of plasma-induced modifications.">Estudos sobre longevidade das modificações induzidas por plasma.</p>
-  </div>
+<p class="visual-caption" data-pt="Comparativo direto: semente padrão (esquerda) e semente com tratamento Plasma FlammTek 5s (direita)." data-en="Direct comparison: standard seed (left) and FlammTek 5s Plasma treatment (right).">Comparativo direto: semente padrão (esquerda) e semente com tratamento Plasma FlammTek 5s (direita).</p>
+<h2 data-pt="Diferenciais Estratégicos" data-en="Strategic Differentiators">Diferenciais Estratégicos</h2>
+<div class="benefits-table-container">
+  <table class="benefits-table">
+    <thead>
+      <tr>
+        <th data-pt="Impacto no Campo" data-en="Field Impact">Impacto no Campo</th>
+        <th data-pt="Vantagem FlammTek" data-en="FlammTek Advantage">Vantagem FlammTek</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="benefit-title" data-pt="Germinação Acelerada" data-en="Accelerated Germination">Germinação Acelerada</span></td>
+        <td class="benefit-desc" data-pt="Quebra de dormência e aumento significativo na velocidade de germinação inicial." data-en="Dormancy breaking and significant increase in initial germination speed.">Quebra de dormência e aumento significativo na velocidade de germinação inicial.</td>
+      </tr>
+      <tr>
+        <td><span class="benefit-title" data-pt="Vigor Aumentado" data-en="Increased Vigor">Vigor Aumentado</span></td>
+        <td class="benefit-desc" data-pt="Melhoria no desenvolvimento radicular e foliar, garantindo plantas mais robustas." data-en="Improved root and leaf development, ensuring more robust plants.">Melhoria no desenvolvimento radicular e foliar, garantindo plantas mais robustas.</td>
+      </tr>
+      <tr>
+        <td><span class="benefit-title" data-pt="Sanidade Vegetal" data-en="Plant Health">Sanidade Vegetal</span></td>
+        <td class="benefit-desc" data-pt="Redução da incidência de fungos e bactérias, diminuindo a mortalidade e o uso de agrotóxicos." data-en="Reduced incidence of fungi and bacteria, decreasing mortality and pesticide use.">Redução da incidência de fungos e bactérias, diminuindo a mortalidade e o uso de agrotóxicos.</td>
+      </tr>
+      <tr>
+        <td><span class="benefit-title" data-pt="Diferencial Sustentável" data-en="Sustainable Differentiator">Diferencial Sustentável</span></td>
+        <td class="benefit-desc" data-pt="Sem aditivos químicos, apenas eletricidade. Um processo verde para uma agricultura de precisão." data-en="No chemical additives, only electricity. A green process for precision agriculture.">Sem aditivos químicos, apenas eletricidade. Um processo verde para uma agricultura de precisão.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<h2 data-pt="Abordagem Técnica" data-en="Technical Approach">Abordagem Técnica</h2>
-<div class="tech-specs">
-<h3 data-pt="Sistema DBD" data-en="DBD System">Sistema DBD</h3>
-<p data-pt="Nossos sistemas utilizam geração de plasma por Descarga de Barreira Dielétrica (DBD) em pressão atmosférica:" data-en="Our systems use Dielectric Barrier Discharge (DBD) plasma generation at atmospheric pressure:">Nossos sistemas utilizam geração de plasma por Descarga de Barreira Dielétrica (DBD) em pressão atmosférica:</p>
-<ul>
-<li data-pt="Nenhum equipamento de vácuo necessário" data-en="No vacuum equipment required">Nenhum equipamento de vácuo necessário</li>
-<li data-pt="Capacidade de processamento contínuo ou em lote" data-en="Continuous or batch processing capability">Capacidade de processamento contínuo ou em lote</li>
-<li data-pt="Configurações escaláveis de reator" data-en="Scalable reactor configurations">Configurações escaláveis de reator</li>
-<li data-pt="Custos operacionais menores que sistemas de baixa pressão" data-en="Lower operational costs than low-pressure systems">Custos operacionais menores que sistemas de baixa pressão</li>
-</ul>
+<h2 data-pt="Operação Limpa" data-en="Clean Operation">Operação Limpa</h2>
+<p data-pt="Nosso sistema de plasma frio opera de forma integrada e automatizada, garantindo repetibilidade e eficiência em larga escala sem gerar resíduos tóxicos." data-en="Our cold plasma system operates in an integrated and automated way, ensuring repeatability and large-scale efficiency without generating toxic residues.">Nosso sistema de plasma frio opera de forma integrada e automatizada, garantindo repetibilidade e eficiência em larga escala sem gerar resíduos tóxicos.</p>
+<div class="inline-visual visual-small">
+  <img src="/images/plasma/process-2.jpg?v=2" alt="Ativação de plasma nas sementes" loading="lazy" />
 </div>
-<h2 data-pt="Status Atual" data-en="Current Status">Status Atual</h2>
-<p data-pt="Esta pesquisa está em estágio de desenvolvimento. Estamos analisando resultados laboratoriais para entender as relações entre parâmetros de tratamento e resultados." data-en="This research is in the development stage. We are analyzing laboratory results to understand the relationships between treatment parameters and outcomes.">Esta pesquisa está em estágio de desenvolvimento. Estamos analisando resultados laboratoriais para entender as relações entre parâmetros de tratamento e resultados.</p>
+<p class="visual-caption" data-pt="O tratamento por plasma atmosférico frio ativa a superfície da semente, melhorando a interação com a água e nutrientes." data-en="Cold atmospheric plasma treatment activates the seed surface, improving interaction with water and nutrients.">O tratamento por plasma atmosférico frio ativa a superfície da semente, melhorando a interação com a água e nutrientes.</p>
+<h2 data-pt="Resultados em Brócolis" data-en="Results in Broccoli">Resultados em Brócolis</h2>
+<p data-pt="Nossos estudos mais recentes comprovam ganhos expressivos de vigor e desenvolvimento em culturas de alto valor agregado." data-en="Our most recent studies prove significant vigor and development gains in high-value crops.">Nossos estudos mais recentes comprovam ganhos expressivos de vigor e development gains in high-value crops.</p>
+<div class="inline-visual">
+  <img src="/images/plasma/bro68.jpg" alt="Resultados do tratamento em brócolis" loading="lazy" />
+</div>
+<p class="visual-caption" data-pt="Comparativo de crescimento: plantas tratadas com tecnologia FlammTek apresentam desenvolvimento foliar e radicular visivelmente superior." data-en="Growth comparison: plants treated with FlammTek technology show visibly superior leaf and root development.">Comparativo de crescimento: plantas tratadas com tecnologia FlammTek apresentam desenvolvimento foliar e radicular visivelmente superior.</p>
 <div class="cta-section">
-  <h3 data-pt="Interessado nesta pesquisa?" data-en="Interested in this research?">Interessado nesta pesquisa?</h3>
-  <p data-pt="Entre em contato para discutir colaborações e parcerias." data-en="Get in touch to discuss collaborations and partnerships.">Entre em contato para discutir colaborações e parcerias.</p>
-  <a href="/#contato" class="cta-button" data-pt="Fale Conosco →" data-en="Contact Us →">Fale Conosco →</a>
-</div>
-<h2 data-pt="Acompanhe no LinkedIn" data-en="Follow on LinkedIn">Acompanhe no LinkedIn</h2>
-<p data-pt="Veja nossas últimas publicações sobre tratamento de sementes e agricultura sustentável." data-en="See our latest posts about seed treatment and sustainable agriculture.">Veja nossas últimas publicações sobre tratamento de sementes e agricultura sustentável.</p>
-<div class="subpage-feed-container">
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-b005d957-aa61-4f9a-9290-3c578e9ca7b6" data-elfsight-app-lazy></div>
+  <h3 data-pt="Quer elevar o vigor da sua cultura?" data-en="Want to increase your crop's vigor?">Quer elevar o vigor da sua cultura?</h3>
+  <p data-pt="Podemos planejar um estudo piloto para validar o ganho de germinação nas suas sementes." data-en="We can plan a pilot study to validate the germination gain in your seeds.">Podemos planejar um estudo piloto para validar o ganho de germinação nas suas sementes.</p>
+  <a href="https://calendly.com/flammtek" class="cta-button" data-pt="Agendar conversa →" data-en="Schedule a call →">Agendar conversa →</a>
 </div>
 <div class="explore-other">
   <h3 data-pt="Explore outra pesquisa" data-en="Explore other research">Explore outra pesquisa</h3>

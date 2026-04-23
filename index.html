@@ -24,7 +24,7 @@
 <meta property="og:image:height" content="630" /><meta property="og:site_name" content="FlammTek - Plasma Innovation" />
 
   
-  <link rel="stylesheet" href="/css/main.min.16acb3bc7ea09978b15d169d0c6f7de4115371a495175a35c3d25cf58d7e133c.css" />
+  <link rel="stylesheet" href="/css/main.min.f2e38634e072be008601a0b7ba270b7543f44a4dafb2ad1ae91186da451d00f5.css" />
   
   
   <script src="/js/main.c6900ef19591242276e314cf9b5076557d51c53edea1e28becf29bd5ad24d4a8.js" defer></script>
@@ -197,7 +197,7 @@
     <h2 data-pt="Números que falam por si." data-en="Numbers that speak for themselves.">Números que falam por si.</h2>
     <div class="metrics-grid">
       <div class="metric-card">
-        <span class="metric-value">+25%</span>
+        <span class="metric-value">+32%</span>
         <span class="metric-label" data-pt="Vigor germinativo (sementes)" data-en="Germination vigor (seeds)">Vigor germinativo (sementes)</span>
       </div>
       <div class="metric-card">
@@ -480,16 +480,22 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <div class="showcase-shell">
-      <article class="showcase-stage" aria-live="polite">
+      <article class="showcase-stage" aria-live="polite" data-swipe-target>
         <div class="showcase-bg active" id="bg-seeds"></div>
         <div class="showcase-bg" id="bg-wood"></div>
         <div class="showcase-bg" id="bg-packaging"></div>
+        <div class="showcase-bg" id="bg-decon"></div>
         <div class="showcase-bg" id="bg-textile"></div>
+
+        
+        <div class="swipe-hint" data-swipe-hint aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+        </div>
 
         <div class="showcase-stage-panel">
           <div class="showcase-stage-topline">
-            <span class="showcase-stage-chip" data-pt="Carro-chefe" data-en="Lead application">Carro-chefe</span>
-            <span class="showcase-stage-counter" data-showcase-counter>01 / 04</span>
+            <span class="showcase-stage-chip" data-showcase-chip data-pt="Carro-chefe" data-en="Lead application">Carro-chefe</span>
+            <span class="showcase-stage-counter" data-showcase-counter>01 / 05</span>
           </div>
 
           <div class="showcase-stage-copy">
@@ -499,7 +505,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
 
           <ul class="showcase-stage-meta" data-showcase-meta>
-            <li>Vigor +25%</li>
+            <li>Vigor +32%</li>
             <li>Sem fungicidas</li>
             <li>TRL 4-5 validado</li>
           </ul>
@@ -529,14 +535,15 @@ document.addEventListener('DOMContentLoaded', () => {
             data-showcase-item
             data-index="0"
             data-url="/seed-plasma/"
+            data-is-lead="true"
             data-title-pt="SEMENTES E AGRO"
             data-title-en="SEEDS AND AGRO"
             data-headline-pt="Mais germinação e proteção sem depender de agroquímicos adicionais."
             data-headline-en="More germination and protection without relying on extra agrochemicals."
             data-detail-pt="Aplicamos plasma frio para elevar vigor germinativo, reduzir patógenos de superfície e manter a operação simples, limpa e rápida."
             data-detail-en="We apply cold plasma to increase germination vigor, reduce surface pathogens, and keep the operation simple, clean, and fast."
-            data-points-pt="Vigor +25%|Sem fungicidas|TRL 4-5 validado"
-            data-points-en="Vigor +25%|No fungicides|TRL 4-5 validated"
+            data-points-pt="Vigor +32%|Sem fungicidas|TRL 4-5 validado"
+            data-points-en="Vigor +32%|No fungicides|TRL 4-5 validated"
           >
             <span class="showcase-card-number">01</span>
             <span class="showcase-card-visual slide-visual-seeds">
@@ -544,9 +551,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </span>
             <span class="showcase-card-content">
               <strong class="showcase-card-title" data-pt="SEMENTES E AGRO" data-en="SEEDS AND AGRO">SEMENTES E AGRO</strong>
-              <span class="showcase-card-copy" data-pt="Tratamento de sementes com ganho de vigor e proteção de superfície." data-en="Seed treatment with vigor gains and surface protection.">Tratamento de sementes com ganho de vigor e proteção de superfície.</span>
+              <span class="showcase-card-copy" data-pt="Tratamento de sementes para ganho de germinação, vigor e descontaminação superficial" data-en="Seed treatment for improved germination, vigor, and surface decontamination">Tratamento de sementes para ganho de germinação, vigor e descontaminação superficial</span>
             </span>
-            
           </button>
 
           <button
@@ -572,9 +578,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </span>
             <span class="showcase-card-content">
               <strong class="showcase-card-title" data-pt="MADEIRA E MDF" data-en="WOOD AND MDF">MADEIRA E MDF</strong>
-              <span class="showcase-card-copy" data-pt="Reciclagem, descontaminação e ativação de superfície com menos química." data-en="Recycling, decontamination, and surface activation with less chemistry.">Reciclagem, descontaminação e ativação de superfície com menos química.</span>
+              <span class="showcase-card-copy" data-pt="Reciclagem, descontaminação e ativação de superfície with less chemistry." data-en="Recycling, decontamination, and surface activation with less chemistry.">Reciclagem, descontaminação e ativação de superfície com menos química.</span>
             </span>
-            
           </button>
 
           <button
@@ -602,7 +607,6 @@ document.addEventListener('DOMContentLoaded', () => {
               <strong class="showcase-card-title" data-pt="EMBALAGENS E POLÍMEROS" data-en="PACKAGING AND POLYMERS">EMBALAGENS E POLÍMEROS</strong>
               <span class="showcase-card-copy" data-pt="Ativação superficial para adesão, impressão e barreiras funcionais." data-en="Surface activation for adhesion, printability, and functional barriers.">Ativação superficial para adesão, impressão e barreiras funcionais.</span>
             </span>
-            
           </button>
 
           <button
@@ -612,6 +616,33 @@ document.addEventListener('DOMContentLoaded', () => {
             aria-pressed="false"
             data-showcase-item
             data-index="3"
+            data-url="/decontamination/"
+            data-title-pt="DESCONTAMINAÇÃO"
+            data-title-en="DECONTAMINATION"
+            data-headline-pt="Inativação de patógenos with clean technology."
+            data-headline-en="Pathogen inactivation with clean technology."
+            data-detail-pt="Utilizamos PAW (Plasma Activated Water) e DCSBD para sanitização de superfícies e alimentos, reduzindo carga microbiana sem resíduos químicos."
+            data-detail-en="We use PAW (Plasma Activated Water) and DCSBD for surface and food sanitization, reducing microbial load without chemical residues."
+            data-points-pt="Tecnologia PAW & DCSBD|Resíduo zero|Alta eficiência"
+            data-points-en="PAW & DCSBD technology|Zero residue|High efficiency"
+          >
+            <span class="showcase-card-number">04</span>
+            <span class="showcase-card-visual slide-visual-decon">
+              <img src="/images/visuals/decontamination.svg?v=2" alt="Descontaminação" loading="lazy">
+            </span>
+            <span class="showcase-card-content">
+              <strong class="showcase-card-title" data-pt="DESCONTAMINAÇÃO" data-en="DECONTAMINATION">DESCONTAMINAÇÃO</strong>
+              <span class="showcase-card-copy" data-pt="Sanitização de superfícies e alimentos com PAW e DCSBD." data-en="Surface and food sanitization using PAW and DCSBD.">Sanitização de superfícies e alimentos com PAW e DCSBD.</span>
+            </span>
+          </button>
+
+          <button
+            class="showcase-card"
+            type="button"
+            role="listitem"
+            aria-pressed="false"
+            data-showcase-item
+            data-index="4"
             data-url="/textile-fibers/"
             data-title-pt="TÊXTIL E FIBRAS"
             data-title-en="TEXTILES AND FIBERS"
@@ -622,7 +653,7 @@ document.addEventListener('DOMContentLoaded', () => {
             data-points-pt="Mais molhabilidade|Sem dano térmico|Compatível com fibras sensíveis"
             data-points-en="More wettability|No thermal damage|Compatible with sensitive fibers"
           >
-            <span class="showcase-card-number">04</span>
+            <span class="showcase-card-number">05</span>
             <span class="showcase-card-visual slide-visual-textile">
               <img src="/images/visuals/textile-fibers.svg?v=2" alt="Têxtil e fibras" loading="lazy">
             </span>
@@ -630,13 +661,51 @@ document.addEventListener('DOMContentLoaded', () => {
               <strong class="showcase-card-title" data-pt="TÊXTIL E FIBRAS" data-en="TEXTILES AND FIBERS">TÊXTIL E FIBRAS</strong>
               <span class="showcase-card-copy" data-pt="Molhabilidade, absorção e acabamento com menos agressão de processo." data-en="Wettability, absorption, and finishing with less process aggression.">Molhabilidade, absorção e acabamento com menos agressão de processo.</span>
             </span>
-            
           </button>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+.swipe-hint {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: horizontalSwipeAnim 4s infinite;
+}
+
+.swipe-hint.hidden {
+  opacity: 0 !important;
+  animation: none;
+}
+
+@keyframes horizontalSwipeAnim {
+  0%, 100% { opacity: 0; transform: translateX(10px); }
+  10%, 40% { opacity: 0.7; }
+  25% { transform: translateX(-30px); }
+  50% { opacity: 0; }
+}
+
+@media (min-width: 1025px) {
+  .swipe-hint { display: none; }
+}
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -646,6 +715,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = Array.from(showcase.querySelectorAll('[data-showcase-item]'));
   const backgrounds = Array.from(showcase.querySelectorAll('.showcase-bg'));
   const rail = showcase.querySelector('.showcase-rail');
+  const stage = showcase.querySelector('[data-swipe-target]');
+  const hint = showcase.querySelector('[data-swipe-hint]');
   const prevButton = showcase.querySelector('[data-showcase-prev]');
   const nextButton = showcase.querySelector('[data-showcase-next]');
   const counter = showcase.querySelector('[data-showcase-counter]');
@@ -654,6 +725,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const detail = showcase.querySelector('[data-showcase-detail]');
   const meta = showcase.querySelector('[data-showcase-meta]');
   const link = showcase.querySelector('[data-showcase-link]');
+  const chip = showcase.querySelector('[data-showcase-chip]');
 
   if (!cards.length || !rail || !counter || !kicker || !title || !detail || !meta || !link) return;
 
@@ -668,6 +740,22 @@ document.addEventListener('DOMContentLoaded', () => {
     return localStorage.getItem('lang') || 'pt';
   }
 
+  function hideHint() {
+    if (hint && !hint.classList.contains('hidden')) {
+      hint.classList.add('hidden');
+    }
+  }
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
   function resetAutoplay() {
     if (autoplayTimer) clearTimeout(autoplayTimer);
     
@@ -678,14 +766,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     autoplayTimer = setTimeout(() => {
       const nextIndex = (currentIndex + 1) % cards.length;
-      updateStage(nextIndex, true);
+      updateStage(nextIndex, false);
     }, readingTime);
   }
 
-  function updateStage(index, scrollCard) {
+  function updateStage(index, isManualTrigger) {
     const card = cards[index];
     if (!card) return;
 
+    if (isManualTrigger) hideHint();
     currentIndex = index;
 
     cards.forEach((item, itemIndex) => {
@@ -703,6 +792,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headlineText = card.getAttribute(`data-headline-${lang}`) || '';
     const detailText = card.getAttribute(`data-detail-${lang}`) || '';
     const points = (card.getAttribute(`data-points-${lang}`) || '').split('|').filter(Boolean);
+    const isLead = card.getAttribute('data-is-lead') === 'true';
 
     kicker.dataset.pt = card.getAttribute('data-title-pt') || '';
     kicker.dataset.en = card.getAttribute('data-title-en') || '';
@@ -718,15 +808,18 @@ document.addEventListener('DOMContentLoaded', () => {
     counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}`;
     link.setAttribute('href', card.getAttribute('data-url') || '/');
 
-    if (scrollCard) {
-      const hasHorizontalOverflow = rail.scrollWidth > rail.clientWidth + 8;
+    if (chip) {
+      chip.style.display = isLead ? 'inline-flex' : 'none';
+    }
 
+    if (isManualTrigger || isElementInViewport(showcase)) {
+      const hasHorizontalOverflow = rail.scrollWidth > rail.clientWidth + 8;
       if (hasHorizontalOverflow) {
         rail.scrollTo({
           left: card.offsetLeft - rail.offsetLeft,
           behavior: 'smooth'
         });
-      } else {
+      } else if (isManualTrigger) {
         card.scrollIntoView({
           behavior: 'smooth',
           block: 'nearest',
@@ -738,14 +831,34 @@ document.addEventListener('DOMContentLoaded', () => {
     resetAutoplay();
   }
 
+  
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  stage.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  stage.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    if (touchEndX < touchStartX - swipeThreshold) {
+      updateStage((currentIndex + 1) % cards.length, true);
+    } else if (touchEndX > touchStartX + swipeThreshold) {
+      updateStage((currentIndex - 1 + cards.length) % cards.length, true);
+    }
+  }
+
   prevButton?.addEventListener('click', () => {
-    const nextIndex = (currentIndex - 1 + cards.length) % cards.length;
-    updateStage(nextIndex, true);
+    updateStage((currentIndex - 1 + cards.length) % cards.length, true);
   });
 
   nextButton?.addEventListener('click', () => {
-    const nextIndex = (currentIndex + 1) % cards.length;
-    updateStage(nextIndex, true);
+    updateStage((currentIndex + 1) % cards.length, true);
   });
 
   cards.forEach((card, index) => {
